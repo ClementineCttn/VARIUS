@@ -149,68 +149,73 @@ shinyUI(fluidPage(
                                   column(4, sliderInput("wealthToPopulationExponent",
                                                         label = "wealthToPopulationExponent", 
                                                         min = 0, max = 2, value = 0.4, step = 0.0001))
-                                )     
+                                ),     
+                              # Bonus mecanism settings
+                              #"For models with the bonus mechanism, choose parameter value",
+                              conditionalPanel(condition = 'input.mechanisms.indexOf("Bonus") != -1',
+                                               h3("Bonus parameter"),
+                                               sliderInput("bonusMultiplier", label = "bonusMultiplier", 
+                                                           min = 0, max = 100, value = 50, step = 0.001)
+                              ),
+                              # Fixed costs mecanism setitings
+                              #"For models with the fixed costs mechanism, choose parameter value",
+                              conditionalPanel(condition = 'input.mechanisms.indexOf("Fixed Costs") != -1',
+                                               h3("Fixed Costs Transaction parameter"),
+                                               sliderInput("fixedCost", label = "fixedCost",
+                                                           min = 0, max = 100, value = 0.4, step = 0.01)
+                              ),
+                              # Ressources mecanism settings
+                              #"For models with the resources mechanism, choose parameter values",
+                              conditionalPanel(condition = 'input.mechanisms.indexOf("Resources") != -1',
+                                               h3("SubSurface Resource parameters"),
+                                               fluidRow(
+                                                 column(6,
+                                                        sliderInput("oilAndGazEffect",
+                                                                    label = "oilAndGazEffect", 
+                                                                    min = -1, max = 1,
+                                                                    value = 0.3, step = 0.0001)
+                                                 ),
+                                                 column(6,
+                                                        sliderInput("coalEffect",
+                                                                    label = "coalEffect", 
+                                                                    min = -1, max = 1,
+                                                                    value = -0.05, step = 0.0001)
+                                                 )
+                                               )),
+                              # Redistribution mecanism settings 
+                              # "For models with the redistribution mechanism, choose parameter values",
+                              conditionalPanel(condition = 'input.mechanisms.indexOf("Redistribution") != -1',
+                                               h3("Double Redistribution parameters"),
+                                               fluidRow(
+                                                 column(6, 
+                                                        sliderInput("territorialTaxes",
+                                                                    label = "territorialTaxes", 
+                                                                    min = 0, max = 1,
+                                                                    value = 0.4, step = 0.0001)
+                                                 ),
+                                                 column(6,
+                                                        sliderInput("capitalShareOfTaxes",
+                                                                    label = "capitalShareOfTaxes", 
+                                                                    min = 0, max = 1,
+                                                                    value = 0.2, step = 0.0001)
+                                                 )
+                                               )
+                              ),
+                              # Urban transition mecanism settings  
+                              #"For models with the urban transition mechanism, choose parameter value",
+                              conditionalPanel(condition = 'input.mechanisms.indexOf("Urban Transition") != -1',
+                                               h3("Urban transition parameter"),
+                                               sliderInput("ruralMultiplier",
+                                                           label = "ruralMultiplier", 
+                                                           min = 0, max = 1,
+                                                           value = 0.02, step = 0.0001)
+                              )  
+                              
+                              
+                              
+                              
              ),
-             # Bonus mecanism settings
-             #"For models with the bonus mechanism, choose parameter value",
-             conditionalPanel(condition = 'input.mechanisms.indexOf("Bonus") != -1',
-                              h3("Bonus parameter"),
-                                        sliderInput("bonusMultiplier", label = "bonusMultiplier", 
-                                                    min = 0, max = 100, value = 50, step = 0.001)
-                              ),
-             # Fixed costs mecanism setitings
-             #"For models with the fixed costs mechanism, choose parameter value",
-             conditionalPanel(condition = 'input.mechanisms.indexOf("Fixed Costs") != -1',
-                              h3("Fixed Costs Transaction parameter"),
-                                        sliderInput("fixedCost", label = "fixedCost",
-                                                    min = 0, max = 100, value = 0.4, step = 0.01)
-                              ),
-             # Ressources mecanism settings
-             #"For models with the resources mechanism, choose parameter values",
-            conditionalPanel(condition = 'input.mechanisms.indexOf("Resources") != -1',
-             h3("SubSurface Resource parameters"),
-                       fluidRow(
-                         column(6,
-                                sliderInput("oilAndGazEffect",
-                                            label = "oilAndGazEffect", 
-                                            min = -1, max = 1,
-                                            value = 0.3, step = 0.0001)
-                                ),
-                         column(6,
-                                sliderInput("coalEffect",
-                                            label = "coalEffect", 
-                                            min = -1, max = 1,
-                                            value = -0.05, step = 0.0001)
-                                )
-                         )),
-              # Redistribution mecanism settings 
-              # "For models with the redistribution mechanism, choose parameter values",
-            conditionalPanel(condition = 'input.mechanisms.indexOf("Redistribution") != -1',
-                             h3("Double Redistribution parameters"),
-                                       fluidRow(
-                                         column(6, 
-                                                sliderInput("territorialTaxes",
-                                                            label = "territorialTaxes", 
-                                                            min = 0, max = 1,
-                                                            value = 0.4, step = 0.0001)
-                                         ),
-                                         column(6,
-                                                sliderInput("capitalShareOfTaxes",
-                                                            label = "capitalShareOfTaxes", 
-                                                            min = 0, max = 1,
-                                                            value = 0.2, step = 0.0001)
-                                         )
-                                       )
-                             ),
-            # Urban transition mecanism settings  
-            #"For models with the urban transition mechanism, choose parameter value",
-            conditionalPanel(condition = 'input.mechanisms.indexOf("Urban Transition") != -1',
-                             h3("Urban transition parameter"),
-                                       sliderInput("ruralMultiplier",
-                                                   label = "ruralMultiplier", 
-                                                   min = 0, max = 1,
-                                                   value = 0.02, step = 0.0001)
-                             ),
+             
             hr(),
              "To execute the model with your parameterization, press ",
              inputPanel(
