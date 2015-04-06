@@ -278,8 +278,7 @@ output$map1ter <- renderPlot({
    Eval[,1] <- c("Distance To Data", "Cities without wealth", "Overflow")
    colnames(Eval) <- c("Evaluation Goals", "Evaluation value (to minimize)")
    Eval
-   
-   })
+   }, options = list(paging = FALSE, lengthMenu = FALSE, searching = FALSE, info = FALSE ))
  
 
 output$print1ter <- renderDataTable({
@@ -327,9 +326,7 @@ output$print1ter <- renderDataTable({
   colnames(Param) <- c("Parameter name", "Calibrated Value", "Used in the model", "Associated Mechanism")
   
   Param
-  
-  
-})
+},options = list(paging = FALSE, lengthMenu = FALSE, searching = FALSE, info = FALSE ))
 
  
 
@@ -360,9 +357,7 @@ output$print1bis <- renderDataTable({
   mecha[,1] <- rownames(mecha)
   colnames(mecha)<- c("Model structure", "Structure State")
   mecha
-
-  
-})
+},  options = list(paging = FALSE, lengthMenu = FALSE, searching = FALSE, info = FALSE ))
 
  
  output$cppst <-renderPrint ({
@@ -687,7 +682,6 @@ output$modelcombi3 <- renderPrint({
  
  output$table_pos_res <- renderDataTable({
    observed <- input$year_sim
-   
    if (input$period2  == "1959-1989") {
      mariusstep0 <- subset(marius, step == 0)
      mariusstep11 <- subset(marius, step == 11)
