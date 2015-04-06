@@ -1,6 +1,7 @@
 library(shiny)
 
 shinyUI(fluidPage(
+  tags$head(tags$link(rel="shortcut icon", href="favicon.png")),
   titlePanel("VARIUS"),
   titlePanel(h4("Visualising empirical and simulated Agglomerations of (Imperial) Russia and the Soviet Union")),
   
