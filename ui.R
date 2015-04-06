@@ -73,7 +73,7 @@ shinyUI(fluidPage(
              h3("Contribution of mechanisms to the quality of simulation (closeness to data)"),
              fluidRow(
                column(6,
-                      sliderInput("pvalue", label = "Statistical Significance",
+                      sliderInput("pvalue", label = "Statistical Significance (p-value, %)",
                            min = 0, max = 10, value = 1, step = 0.1))
              ),
              tags$p(class="text-justify", HTML('Models with different combinaison of mechanisms have been calibrated
@@ -150,21 +150,21 @@ shinyUI(fluidPage(
                                                         label = "wealthToPopulationExponent", 
                                                         min = 0, max = 2, value = 0.4, step = 0.0001))
                                 ),     
-                              # Bonus mecanism settings
+                              # Bonus mechanism settings
                               #"For models with the bonus mechanism, choose parameter value",
                               conditionalPanel(condition = 'input.mechanisms.indexOf("Bonus") != -1',
                                                h3("Bonus parameter"),
                                                sliderInput("bonusMultiplier", label = "bonusMultiplier", 
                                                            min = 0, max = 100, value = 50, step = 0.001)
                               ),
-                              # Fixed costs mecanism setitings
+                              # Fixed costs mechanism setitings
                               #"For models with the fixed costs mechanism, choose parameter value",
                               conditionalPanel(condition = 'input.mechanisms.indexOf("Fixed Costs") != -1',
                                                h3("Fixed Costs Transaction parameter"),
                                                sliderInput("fixedCost", label = "fixedCost",
                                                            min = 0, max = 100, value = 0.4, step = 0.01)
                               ),
-                              # Ressources mecanism settings
+                              # Ressources mechanism settings
                               #"For models with the resources mechanism, choose parameter values",
                               conditionalPanel(condition = 'input.mechanisms.indexOf("Resources") != -1',
                                                h3("SubSurface Resource parameters"),
@@ -182,7 +182,7 @@ shinyUI(fluidPage(
                                                                     value = -0.05, step = 0.0001)
                                                  )
                                                )),
-                              # Redistribution mecanism settings 
+                              # Redistribution mechanism settings 
                               # "For models with the redistribution mechanism, choose parameter values",
                               conditionalPanel(condition = 'input.mechanisms.indexOf("Redistribution") != -1',
                                                h3("Double Redistribution parameters"),
@@ -201,7 +201,7 @@ shinyUI(fluidPage(
                                                  )
                                                )
                               ),
-                              # Urban transition mecanism settings  
+                              # Urban transition mechanism settings  
                               #"For models with the urban transition mechanism, choose parameter value",
                               conditionalPanel(condition = 'input.mechanisms.indexOf("Urban Transition") != -1',
                                                h3("Urban transition parameter"),
