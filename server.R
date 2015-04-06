@@ -248,8 +248,8 @@ output$map1ter <- renderPlot({
     
     p <- ggplot(aes(x=Mechanism, fill=Significant), data=data)
     plot1 <- p + geom_bar(aes(y=DistanceToData), stat="identity") +
-      scale_fill_manual(values = c("dodgerblue", "gray30")) 
-    
+      scale_fill_manual(values = c("dodgerblue", "gray30")) + 
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
     plot1
     
   })
@@ -893,7 +893,8 @@ output$modelcombi3 <- renderPrint({
    
    p <- ggplot(aes(x=UrbanAttribute, fill=Significant), data=data)
    plot1 <- p + geom_bar(aes(y=Residual), stat="identity") +
-     scale_fill_manual(values = c("dodgerblue", "gray30")) 
+     scale_fill_manual(values = c("dodgerblue", "gray30")) + 
+     theme(axis.text.x = element_text(angle = 45, hjust = 1))
    
    plot1
    
