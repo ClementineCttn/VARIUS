@@ -19,7 +19,9 @@ shinyUI(fluidPage(
              interactions to specific mechanisms characterizing Soviet cities and their
              geographical environment. The structure of the model family is modular enough
              to allow various sets of mechanisms playing together or alternatively.',
-             br(),  br(),'The aim is to evaluate the degree of genericity of Soviet urban
+             br(), 
+             column(8, img(src = "MARIUS_Approach.png",class="img-responsive")),
+              'The aim is to evaluate the degree of genericity of Soviet urban
              trajectories by growing articial systems of cities, from the most
              generic ones to the most particular ones.',
             br(),  br(),'The fitness of the model is evaluated
