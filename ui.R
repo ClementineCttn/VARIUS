@@ -118,8 +118,8 @@ shinyUI(fluidPage(
              fluidRow(
                column(4,
                selectInput("choice_run", label = "Model to run",
-                           choices = c("Best [Calibrated] Model", "Run [Customised] Model"), 
-                           selected = "Best [Calibrated] Model")),
+                           choices = c("Best Calibrated Model", "Customised Model"), 
+                           selected = "Best Calibrated Model")),
                column(4,
                selectInput("period2", label = "Period",
                            choices = c("1959-1989", "1989-2010"), selected = "1959-1989")),

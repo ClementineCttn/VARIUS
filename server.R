@@ -371,7 +371,7 @@ output$print1bis <- renderDataTable({
    
    if(input$go == 1) {
      
-      if (input$choice_run == "Best [Calibrated] Model") {
+      if (input$choice_run == "Best Calibrated Model") {
           current_generation <- "400000"
            calibration <- read.csv(paste("data/population", current_generation, ".csv", sep=""), dec=".", sep=",")
      
@@ -413,7 +413,7 @@ output$print1bis <- renderDataTable({
    }
    
    
-   if (input$choice_run == "Run [Customised] Model") {
+   if (input$choice_run == "Customised Model") {
 
          mec <- ""
         if (any(listmec == "Bonus")) mec <- paste(mec, "fr.geocites.gugus.balance.Bonus,", sep="")
@@ -459,7 +459,7 @@ output$modelcombi <- renderPrint({
   if (any(listmec == "Resources")) mod <- paste(mod, " + SubSurfaceResources", sep="")
   if (any(listmec == "Redistribution")) mod <- paste(mod, " + DoubleRedistribution", sep="")
   if (any(listmec == "Urban Transition")) mod <- paste(mod, " + UrbanTransition", sep="")
-  paste("Model combination : ", mod, time, sep="")
+  paste("Model combination : ", input$choice_run, " | ", mod, time, sep="")
 })
 
 output$modelcombi2 <- renderPrint({
@@ -472,7 +472,7 @@ output$modelcombi2 <- renderPrint({
   if (any(listmec == "Resources")) mod <- paste(mod, " + SubSurfaceResources", sep="")
   if (any(listmec == "Redistribution")) mod <- paste(mod, " + DoubleRedistribution", sep="")
   if (any(listmec == "Urban Transition")) mod <- paste(mod, " + UrbanTransition", sep="")
-  paste("Model combination : ", mod, time, sep="")
+  paste("Model combination : ", input$choice_run, " | ", mod, time, sep="")
 })
 
 output$modelcombi3 <- renderPrint({
@@ -485,7 +485,7 @@ output$modelcombi3 <- renderPrint({
   if (any(listmec == "Resources")) mod <- paste(mod, " + SubSurfaceResources", sep="")
   if (any(listmec == "Redistribution")) mod <- paste(mod, " + DoubleRedistribution", sep="")
   if (any(listmec == "Urban Transition")) mod <- paste(mod, " + UrbanTransition", sep="")
-  paste("Model combination : ", mod, time, sep="")
+  paste("Model combination : ", input$choice_run, " | ", mod, time, sep="")
 })
  output$graph2 <- renderPlot({
    
