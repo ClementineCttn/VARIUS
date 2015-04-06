@@ -12,16 +12,18 @@ shinyUI(fluidPage(
                column(3, img(src = "mariusLogo.png",class="img-responsive")),
                column(9, h2("The MARIUS Project"))),
              tags$p(class="text-justify",
-               'MARIUS is an incremental agent-based model of systems of cities. It 
-             has been built to reproduce the trajectories of cities in the Former Soviet Union.
-             The rules of the model are designed to range from generic interurban
-             interactions to specific interactions between Soviet cities and their
-             geographical environment. The structure of the model is modular enough
-             to allow various sets of mechanisms playing together or alternatively.
-             Our aim is to evaluate the degree of genericity of Soviet urban
+              'MARIUS is an incremental family of agent-based models of systems of cities. It 
+             was built to simulate the demographic trajectories of cities in the Former Soviet Union.',
+              br(),  br(), '
+             The rules of the models are designed to range from generic interurban
+             interactions to specific mechanisms characterizing Soviet cities and their
+             geographical environment. The structure of the model family is modular enough
+             to allow various sets of mechanisms playing together or alternatively.',
+             br(),  br(),'The aim is to evaluate the degree of genericity of Soviet urban
              trajectories by growing articial systems of cities, from the most
-             generic ones to the most particular. The fitness of the model is evaluated
-             against urban data, gathered in the DARIUS Database.')
+             generic ones to the most particular ones.',
+            br(),  br(),'The fitness of the model is evaluated
+             against historical urban data, gathered within DARIUS Database.')
              #img(src = "incremental-modeling-EN.png", height = 500, width = 500)
     ),
     "What Happened ?",
