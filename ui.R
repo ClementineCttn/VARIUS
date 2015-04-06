@@ -252,14 +252,25 @@ shinyUI(fluidPage(
              Residuals help trigger how to improve the model."),
              fluidRow(
                column(6,
-                      selectInput("year_sim", label = "Simulated Year",
-                                  choices = c("Pop2010","Pop2002","Pop1989",
-                                              "Pop1979", "Pop1970"), 
-                                  selected = "Pop1989")    
-                      ),
-               column(6,
                       sliderInput("cutoff", label = "Residual absolute cut-off",
-                                  min = 0, max = 5, value = 0.5, step = 0.05))
+                                  min = 0, max = 5, value = 0.5, step = 0.05)),
+               conditionalPanel(condition = "input.period2 == '1959-1989'",
+                                
+                                column(6,
+                                       selectInput("year_sim", label = "Simulated Year",
+                                                   choices = c("Pop2010","Pop2002","Pop1989",
+                                                               "Pop1979", "Pop1970"), 
+                                                   selected = "Pop1989")    
+                                )),
+               conditionalPanel(condition = "input.period2 == '1989-2010'",
+                                
+                                column(6,
+                                       selectInput("year_sim", label = "Simulated Year",
+                                                   choices = c("Pop2010","Pop2002","Pop1989",
+                                                               "Pop1979", "Pop1970"), 
+                                                   selected = "Pop2010")    
+                                ))
+               
              ),
              plotOutput("map2"),
              h3("Most Positive Residual trajectories"),
@@ -276,11 +287,18 @@ shinyUI(fluidPage(
                   class="mark">coefficient values</span>
                   of some available urban attributes (status of capital, resources, location and past growth)')),
              fluidRow(
-               column(6,
-                      selectInput("year_sim2", label = "Simulated Year",
-                                  choices = c("Pop2010","Pop2002","Pop1989", "Pop1979", "Pop1970", "Pop1959"),
-                                  selected = "Pop1989")
-                      )),
+               conditionalPanel(condition = "input.period2 == '1959-1989'",
+                     column(6,
+                     selectInput("year_sim2", label = "Simulated Year",
+                     choices = c("Pop2010","Pop2002","Pop1989", "Pop1979", "Pop1970", "Pop1959"),
+                     selected = "Pop1989"))),                     
+               conditionalPanel(condition = "input.period2 == '1989-2010'",
+                                column(6,
+                                       selectInput("year_sim2", label = "Simulated Year",
+                                                   choices = c("Pop2010","Pop2002","Pop1989", "Pop1979", "Pop1970", "Pop1959"),
+                                                   selected = "Pop2010")))
+               
+             ),
              plotOutput("graph3"),
              verbatimTextOutput("modelcombi3")
     ),
