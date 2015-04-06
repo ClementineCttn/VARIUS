@@ -259,7 +259,7 @@ shinyUI(fluidPage(
                                 column(6,
                                        selectInput("year_sima", label = "Simulated Year",
                                                    choices = c("Pop1989",
-                                                               "Pop1979", "Pop1970"), 
+                                                               "Pop1979", "Pop1970", "Pop1959"), 
                                                    selected = "Pop1989")    
                                 )),
                conditionalPanel(condition = "input.period2 == '1989-2010'",
