@@ -589,37 +589,28 @@ output$modelcombi3 <- renderPrint({
  output$map2 <- renderPlot({
    par(mar = c(0,0,1,0))
    plot(Shape, col="gray69", border="white", lwd = 1)
-   observed <- input$year_sim
+
    cutoff <- input$cutoff
    
    
    marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
    if (input$period2  == "1959-1989") {
+     observed <- input$year_sima
      mariusstep0 <- subset(marius, step == 0)
      mariusstep11 <- subset(marius, step == 11)
      mariusstep20 <- subset(marius, step == 20)
      mariusstep30 <- subset(marius, step == 30)
-     
+
   if (observed == "Pop1989") table <- mariusstep30
    if (observed == "Pop1979") table <- mariusstep20
    if (observed == "Pop1970") table <- mariusstep11
    if (observed == "Pop1959") table <- mariusstep0
   
-  
-  
-  
-  if (observed == "Pop2010") {
-    table <- mariusstep0
-    observed <- "Pop1959"
-  }
-  if (observed == "Pop2002"){
-    table <- mariusstep0
-    observed <- "Pop1959"
-  }
+ 
    }
   
   if (input$period2  == "1989-2010") {
-    
+    observed <- input$year_simb
     mariusstep0 <- subset(marius, step == 0)
     mariusstep13 <- subset(marius, step == 13)
     mariusstep21 <- subset(marius, step == 21)
@@ -627,20 +618,7 @@ output$modelcombi3 <- renderPrint({
     if (observed == "Pop2010") table <- mariusstep21
     if (observed == "Pop2002") table <- mariusstep13
     if (observed == "Pop1989") table <- mariusstep0
-    
-    
-   if (observed == "Pop1979") {
-      table <- mariusstep0
-      observed <- "Pop1989"
-    }
-    if (observed == "Pop1970"){
-      table <- mariusstep0
-      observed <- "Pop1989"
-    }
-    if (observed == "Pop1959") {
-      table <- mariusstep0
-      observed <- "Pop1989"
-  }
+ 
   }
   
    Year <- subset(name_col, name == observed)
@@ -668,7 +646,7 @@ output$modelcombi3 <- renderPrint({
         cex = input$sizefactor1 * sqrt(Agglo@data[,Year]/ pi), 
         col = "gray9", bg = Agglo@data$VarCut, lwd = 0.1,
         add = TRUE)
-   title(paste("Maximum residuals | ", substr(input$year_sim, 4, 7), sep=""))
+   title(paste("Maximum residuals | ", substr(observed, 4, 7), sep=""))
    leg <- c(15000, 1000, 100, 10)
    legend("topleft",legend = leg, pch = 21,
           col = "gray30", pt.bg = "gray90",
@@ -687,8 +665,9 @@ output$modelcombi3 <- renderPrint({
  })
  
  output$table_pos_res <- renderDataTable({
-   observed <- input$year_sim
+
    if (input$period2  == "1959-1989") {
+     observed <- input$year_sima
      mariusstep0 <- subset(marius, step == 0)
      mariusstep11 <- subset(marius, step == 11)
      mariusstep20 <- subset(marius, step == 20)
@@ -699,17 +678,10 @@ output$modelcombi3 <- renderPrint({
      if (observed == "Pop1970") table <- mariusstep11
      if (observed == "Pop1959") table <- mariusstep0
      
-     
-     if (observed == "Pop2010") {
-       table <- mariusstep0
-       observed <- "Pop1959"
-     }
-     if (observed == "Pop2002"){
-       table <- mariusstep0
-       observed <- "Pop1959"
-   }}
+}
    
    if (input$period2  == "1989-2010") {
+     observed <- input$year_simb
      mariusstep0 <- subset(marius, step == 0)
      mariusstep13 <- subset(marius, step == 13)
      mariusstep21 <- subset(marius, step == 21)
@@ -718,20 +690,7 @@ output$modelcombi3 <- renderPrint({
      if (observed == "Pop2002") table <- mariusstep13
      if (observed == "Pop1989") table <- mariusstep0
      
-     
-     
-     if (observed == "Pop1979") {
-       table <- mariusstep0
-       observed <- "Pop1989"
-     }
-     if (observed == "Pop1970"){
-       table <- mariusstep0
-       observed <- "Pop1989"
-     }
-     if (observed == "Pop1959") {
-       table <- mariusstep0
-       observed <- "Pop1989"
-   }}
+}
    
    
    Year <- subset(name_col, name == observed)
@@ -751,9 +710,10 @@ output$modelcombi3 <- renderPrint({
  })
  
  output$table_neg_res <- renderDataTable({
-   observed <- input$year_sim
+
    
    if (input$period2  == "1959-1989") {
+     observed <- input$year_sima
      mariusstep0 <- subset(marius, step == 0)
      mariusstep11 <- subset(marius, step == 11)
      mariusstep20 <- subset(marius, step == 20)
@@ -763,18 +723,10 @@ output$modelcombi3 <- renderPrint({
      if (observed == "Pop1979") table <- mariusstep20
      if (observed == "Pop1970") table <- mariusstep11
      if (observed == "Pop1959") table <- mariusstep0
-     
-     
-     if (observed == "Pop2010") {
-       table <- mariusstep0
-       observed <- "Pop1959"
-     }
-     if (observed == "Pop2002"){
-       table <- mariusstep0
-       observed <- "Pop1959"
-   }}
+}
    
    if (input$period2  == "1989-2010") {
+     observed <- input$year_simb
      mariusstep0 <- subset(marius, step == 0)
      mariusstep13 <- subset(marius, step == 13)
      mariusstep21 <- subset(marius, step == 21)
@@ -783,19 +735,7 @@ output$modelcombi3 <- renderPrint({
      if (observed == "Pop2002") table <- mariusstep13
      if (observed == "Pop1989") table <- mariusstep0
           
-     
-     if (observed == "Pop1979") {
-       table <- mariusstep0
-       observed <- "Pop1989"
-     }
-     if (observed == "Pop1970"){
-       table <- mariusstep0
-       observed <- "Pop1989"
-     }
-     if (observed == "Pop1959") {
-       table <- mariusstep0
-       observed <- "Pop1989"
-   }}
+ }
    
    Year <- subset(name_col, name == observed)
    Year <- as.numeric(Year[1,2])
@@ -815,9 +755,10 @@ output$modelcombi3 <- renderPrint({
    
  output$graph3 <- renderPlot({
    marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-   observed <- input$year_sim2
+
    
    if (input$period2  == "1959-1989") {
+     observed <- input$year_sim2a
      mariusstep0 <- subset(marius, step == 0)
      mariusstep11 <- subset(marius, step == 11)
      mariusstep20 <- subset(marius, step == 20)
@@ -827,20 +768,10 @@ output$modelcombi3 <- renderPrint({
      if (observed == "Pop1979") table <- mariusstep20
      if (observed == "Pop1970") table <- mariusstep11
      if (observed == "Pop1959") table <- mariusstep0
-     
-     
-     
-     if (observed == "Pop2010") {
-       table <- mariusstep0
-       observed <- "Pop1959"
-     }
-     if (observed == "Pop2002"){
-       table <- mariusstep0
-       observed <- "Pop1959"
-   }  }
+  }
    
    if (input$period2  == "1989-2010") {
-   
+     observed <- input$year_sim2b
      mariusstep0 <- subset(marius, step == 0)
      mariusstep13 <- subset(marius, step == 13)
      mariusstep21 <- subset(marius, step == 21)
@@ -849,19 +780,7 @@ output$modelcombi3 <- renderPrint({
      if (observed == "Pop2002") table <- mariusstep13
      if (observed == "Pop1989") table <- mariusstep0
      
-     
-     if (observed == "Pop1979") {
-       table <- mariusstep0
-       observed <- "Pop1989"
-     }
-     if (observed == "Pop1970"){
-       table <- mariusstep0
-       observed <- "Pop1989"
-     }
-     if (observed == "Pop1959") {
-       table <- mariusstep0
-       observed <- "Pop1989"
-   }}
+}
    
      
    Year <- subset(name_col, name == observed)

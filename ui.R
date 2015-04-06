@@ -257,17 +257,16 @@ shinyUI(fluidPage(
                conditionalPanel(condition = "input.period2 == '1959-1989'",
                                 
                                 column(6,
-                                       selectInput("year_sim", label = "Simulated Year",
-                                                   choices = c("Pop2010","Pop2002","Pop1989",
+                                       selectInput("year_sima", label = "Simulated Year",
+                                                   choices = c("Pop1989",
                                                                "Pop1979", "Pop1970"), 
                                                    selected = "Pop1989")    
                                 )),
                conditionalPanel(condition = "input.period2 == '1989-2010'",
                                 
                                 column(6,
-                                       selectInput("year_sim", label = "Simulated Year",
-                                                   choices = c("Pop2010","Pop2002","Pop1989",
-                                                               "Pop1979", "Pop1970"), 
+                                       selectInput("year_simb", label = "Simulated Year",
+                                                   choices = c("Pop2010","Pop2002","Pop1989"), 
                                                    selected = "Pop2010")    
                                 ))
                
@@ -289,13 +288,13 @@ shinyUI(fluidPage(
              fluidRow(
                conditionalPanel(condition = "input.period2 == '1959-1989'",
                      column(6,
-                     selectInput("year_sim2", label = "Simulated Year",
-                     choices = c("Pop2010","Pop2002","Pop1989", "Pop1979", "Pop1970", "Pop1959"),
+                     selectInput("year_sim2a", label = "Simulated Year",
+                     choices = c("Pop1989", "Pop1979", "Pop1970", "Pop1959"),
                      selected = "Pop1989"))),                     
                conditionalPanel(condition = "input.period2 == '1989-2010'",
                                 column(6,
-                                       selectInput("year_sim2", label = "Simulated Year",
-                                                   choices = c("Pop2010","Pop2002","Pop1989", "Pop1979", "Pop1970", "Pop1959"),
+                                       selectInput("year_sim2b", label = "Simulated Year",
+                                                   choices = c("Pop2010","Pop2002","Pop1989"),
                                                    selected = "Pop2010")))
                
              ),
