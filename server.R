@@ -8,6 +8,7 @@ library(RCurl)
 library(ggplot2)
 library(reshape2)
 library(grid)
+
 FSU_Reg<-readOGR(dsn = "data/FSU.shp", layer = "FSU",encoding = "utf8", stringsAsFactors = FALSE, verbose = FALSE)
 
 Agglo<-readOGR(dsn = "data/DARIUS_points.shp" , layer = "DARIUS_points", encoding = "utf8", stringsAsFactors = FALSE, verbose = FALSE)
@@ -48,7 +49,8 @@ shinyServer(function(input, output) {
   output$map1 <- renderPlot({ 
     Year <- subset(name_col, name == input$Census_year)
     Year <- as.numeric(Year[1,2])
-    plot(Shape, col="gray69", border="white", lwd = 1)
+    par(mar = c(0,0,1,0))
+    plot(Shape, col="gray69", border="white", lwd = 1, ann=FALSE, axes=FALSE)
     plot(Agglo, pch = 21,
          cex = input$sizefactor1 * sqrt(Agglo@data[, Year ]/ pi), 
          col = "gray30", bg = "dodgerblue", lwd = 0.5,
@@ -91,6 +93,7 @@ shinyServer(function(input, output) {
                                         breaks = vcut,
                                         include.lowest = TRUE,
                                         right = FALSE)))
+  par(mar = c(0,0,1,0))
   plot(Shape, col="gray69", border="white", lwd = 1)
   
    plot(Agglo, pch = 21,
@@ -124,6 +127,7 @@ output$map1ter <- renderPlot({
   #  Agglo@data$AttCex <- Agglo@data$AttCex * input$sizefactor1
     Attcolor <- c("red", "black")
     Attnames <- c("Capital city", "Other city")
+  par(mar = c(0,0,1,0))
     plot(Shape, col="gray69", border="white", lwd = 1)
     plot(Agglo, pch = 21, cex = Agglo@data$AttCex, 
          col = Agglo@data$AttCol, bg = Agglo@data$AttCol, add = TRUE)
@@ -137,6 +141,7 @@ output$map1ter <- renderPlot({
   #  Agglo@data$AttCex <- Agglo@data$AttCex * input$sizefactor1
     Attcolor <- c("coral", "black")
     Attnames <- c("Capital city", "Other city")
+    par(mar = c(0,0,1,0))
     plot(Shape, col="gray69", border="white", lwd = 1)
     plot(Agglo, pch = 21, cex = Agglo@data$AttCex, 
          col = Agglo@data$AttCol, bg = Agglo@data$AttCol, add = TRUE)
@@ -148,6 +153,7 @@ output$map1ter <- renderPlot({
     Agglo@data$AttCex <- ifelse(Agglo@data$MONOGOROD == 1, 0.6, 0.05)
     Attcolor <- c("darkmagenta", "black")
     Attnames <- c("Mono Industry city (Russia only)", "Other city")
+    par(mar = c(0,0,1,0))
     plot(Shape, col="gray69", border="white", lwd = 1)
     plot(Agglo, pch = 21, cex = Agglo@data$AttCex, 
          col = Agglo@data$AttCol, bg = Agglo@data$AttCol, add = TRUE)
@@ -160,6 +166,7 @@ output$map1ter <- renderPlot({
   #  Agglo@data$AttCex <- Agglo@data$AttCex * input$sizefactor1
     Attcolor <- c("deepskyblue4", "black")
     Attnames <- c("Oil&Gas city", "Other city")
+    par(mar = c(0,0,1,0))
     plot(Shape, col="gray69", border="white", lwd = 1)
     plot(Agglo, pch = 21, cex = Agglo@data$AttCex, 
          col = Agglo@data$AttCol, bg = Agglo@data$AttCol, add = TRUE)
@@ -172,6 +179,7 @@ output$map1ter <- renderPlot({
   #  Agglo@data$AttCex <- Agglo@data$AttCex * input$sizefactor1
     Attcolor <- c("dodgerblue3", "black")
     Attnames <- c("Coal city", "Other city")
+    par(mar = c(0,0,1,0))
     plot(Shape, col="gray69", border="white", lwd = 1)
     plot(Agglo, pch = 21, cex = Agglo@data$AttCex, 
          col = Agglo@data$AttCol, bg = Agglo@data$AttCol, add = TRUE)
@@ -184,6 +192,7 @@ output$map1ter <- renderPlot({
    # Agglo@data$AttCex <- Agglo@data$AttCex * input$sizefactor1
     Attcolor <- c("deeppink3", "black")
     Attnames <- c("Airport city", "Other city")
+    par(mar = c(0,0,1,0))
     plot(Shape, col="gray69", border="white", lwd = 1)
     plot(Agglo, pch = 21, cex = Agglo@data$AttCex, 
          col = Agglo@data$AttCol, bg = Agglo@data$AttCol, add = TRUE)
@@ -196,6 +205,7 @@ output$map1ter <- renderPlot({
     #Agglo@data$AttCex <- Agglo@data$AttCex * input$sizefactor1
     Attcolor <- c("goldenrod", "aquamarine3")
     Attnames <- c("Western city", "Eastern city")
+    par(mar = c(0,0,1,0))
     plot(Shape, col="gray69", border="white", lwd = 1)
     plot(Agglo, pch = 21, cex = Agglo@data$AttCex, 
          col = Agglo@data$AttCol, bg = Agglo@data$AttCol, add = TRUE)
@@ -576,6 +586,7 @@ output$modelcombi3 <- renderPrint({
  
  
  output$map2 <- renderPlot({
+   par(mar = c(0,0,1,0))
    plot(Shape, col="gray69", border="white", lwd = 1)
    observed <- input$year_sim
    cutoff <- input$cutoff
