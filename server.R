@@ -577,7 +577,11 @@ output$modelcombi3 <- renderPrint({
      scale_x_log10(breaks=c(1, 10, 100, 1000)) + 
      xlab("Ranks") + ylab("Population (x1000)") +
      geom_point() + geom_line() +
-     scale_colour_manual(values=cols) #+    ggtitle(paste("Simulated\n", sep="")) 
+     scale_colour_manual(values=cols) +
+   theme(axis.text=element_text(size=12) ,
+         axis.title=element_text(size=14),
+         axis.text.x = element_text(angle = 45, hjust = 1))
+ #+    ggtitle(paste("Simulated\n", sep="")) 
    
  })
  
