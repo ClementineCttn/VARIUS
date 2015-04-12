@@ -35,10 +35,12 @@ shinyUI(fluidPage(
                   column(6,
                          selectInput("Census_year",
                                      label = "Census year",
-                                     choices = c("Pop2010", "Pop2002","Pop1989",
-                                                 "Pop1979", "Pop1970", "Pop1959",
-                                                 "Pop1939", "Pop1926","Pop1897"),
-                                     selected = "Pop1959")),
+                                     choices = c("2010" = "Pop2010", "2002"="Pop2002",
+                                                "1989"="Pop1989", "1979"="Pop1979", 
+                                                "1970"="Pop1970", "1959"="Pop1959",
+                                                 "1939"="Pop1939", "1926"= "Pop1926",
+                                                "1897"="Pop1897"),
+                                     selected = "1959")),
                   column(6,
                          sliderInput("sizefactor1",
                                      label = "Population size factor",
@@ -50,16 +52,19 @@ shinyUI(fluidPage(
               fluidRow(
                 column(6,
                 selectInput("Census_year1", label = "First Census year",
-                            choices = c("Pop2002","Pop1989", "Pop1979",
-                                        "Pop1970", "Pop1959", "Pop1939",
-                                        "Pop1926", "Pop1897"),
-                            selected = "Pop2002")),
+                            choices = c("2002"="Pop2002",
+                                        "1989"="Pop1989", "1979"="Pop1979", 
+                                        "1970"="Pop1970", "1959"="Pop1959",
+                                        "1939"="Pop1939", "1926"= "Pop1926",
+                                        "1897"="Pop1897"),
+                            selected = "2002")),
                 column(6,
                        selectInput("Census_year2", label = "Second Census year",
-                            choices = c("Pop2010", "Pop2002","Pop1989",
-                                        "Pop1979", "Pop1970","Pop1959",
-                                        "Pop1939", "Pop1926"),
-                            selected = "Pop2010"))
+                            choices = c("2010" = "Pop2010", "2002"="Pop2002",
+                                        "1989"="Pop1989", "1979"="Pop1979", 
+                                        "1970"="Pop1970", "1959"="Pop1959",
+                                        "1939"="Pop1939", "1926"= "Pop1926"),
+                            selected = "2010"))
               ),
               plotOutput("map1bis"),
               h3("Urban Statuses & Attributes"),
@@ -130,9 +135,11 @@ shinyUI(fluidPage(
                                                  "Redistribution", "Urban Transition"),
                                   selected = c("Bonus", "Fixed Costs"))))),
              # Custom Model
-             conditionalPanel(condition = "input.choice_run == 'Run [Customised] Model'",
+             conditionalPanel(condition = "input.choice_run == 'Customised Model'",
                                 h3("Generic parameters"),
                                 fluidRow(
+                                  
+                              
                                   column(4, sliderInput("populationToWealthExponent",
                                                         label = "populationToWealthExponent",
                                                         min = 1, max = 5, value = 1.1, step = 0.0001)),
@@ -233,7 +240,6 @@ shinyUI(fluidPage(
     "How close are we ?",
     tabPanel("Macro Analysis",
              h3("Macro-geographic analysis"),
-             # verbatimTextOutput("modelcombi"),
              tags$p(class="text-justify",
                     "This rank-size representation is common to study the hierarchical
                     structure of systems of cities and their evolution towards equalisation
@@ -244,7 +250,6 @@ shinyUI(fluidPage(
     ),
     tabPanel("Residual trajectories",
              h3("Residuals Trajectories"),
-             # verbatimTextOutput("modelcombi"),
              tags$p(class="text-justify",
                     "Residuals represent the difference between observed and simulated population for each city (in logs).
              Positive residuals mean that cities grew faster in reality than what we were able to simulate, 
@@ -258,16 +263,17 @@ shinyUI(fluidPage(
                                 
                                 column(6,
                                        selectInput("year_sima", label = "Simulated Year",
-                                                   choices = c("Pop1989",
-                                                               "Pop1979", "Pop1970", "Pop1959"), 
-                                                   selected = "Pop1989")    
+                                                   choices = c("1989"="Pop1989", "1979"="Pop1979", 
+                                                               "1970"="Pop1970", "1959"="Pop1959"), 
+                                                   selected = "1989")    
                                 )),
                conditionalPanel(condition = "input.period2 == '1989-2010'",
                                 
                                 column(6,
                                        selectInput("year_simb", label = "Simulated Year",
-                                                   choices = c("Pop2010","Pop2002","Pop1989"), 
-                                                   selected = "Pop2010")    
+                                                   choices = c("2010" = "Pop2010", "2002"="Pop2002",
+                                                               "1989"="Pop1989"), 
+                                                   selected = "2010")    
                                 ))
                
              ),
@@ -289,14 +295,15 @@ shinyUI(fluidPage(
                conditionalPanel(condition = "input.period2 == '1959-1989'",
                      column(6,
                      selectInput("year_sim2a", label = "Simulated Year",
-                     choices = c("Pop1989", "Pop1979", "Pop1970", "Pop1959"),
-                     selected = "Pop1989"))),                     
+                     choices = c("1989"="Pop1989", "1979"="Pop1979", 
+                                 "1970"="Pop1970", "1959"="Pop1959"),
+                     selected = "1989"))),                     
                conditionalPanel(condition = "input.period2 == '1989-2010'",
                                 column(6,
                                        selectInput("year_sim2b", label = "Simulated Year",
-                                                   choices = c("Pop2010","Pop2002","Pop1989"),
-                                                   selected = "Pop2010")))
-               
+                                                   choices = c("2010" = "Pop2010", "2002"="Pop2002",
+                                                               "1989"="Pop1989"),
+                                                   selected = "2010")))
              ),
              plotOutput("graph3"),
              verbatimTextOutput("modelcombi3")
