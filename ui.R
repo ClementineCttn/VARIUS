@@ -248,12 +248,14 @@ shinyUI(fluidPage(
              inputPanel(
                actionButton("go", "Run The Model", icon = NULL)
                ),
+            "And wait a few seconds until the message 'Done' appears.",
             conditionalPanel(condition = 'input.go >= 1',
                  verbatimTextOutput("cppst"))
             
     ),
             
     "How close are we ?", 
+    tabPanel("runs",verbatimTextOutput("runs")),
      tabPanel("Macro Analysis",
              h3("Macro-geographic analysis"),
              tags$p(class="text-justify",

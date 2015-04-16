@@ -44,12 +44,12 @@ plotAttribute <- function(attribute, Attcolor, Attnames) {
        "1000 km", cex = 0.8)
 }
 
-modelruns1959 <- 0
-modelruns1989 <- 0
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-   
+  modelruns1959 <- 0
+  modelruns1989 <- 0
+  
   output$map1 <- renderPlot({ 
     Year <- subset(name_col, name == input$Census_year)
     Year <- as.numeric(Year[1,2])
@@ -472,7 +472,7 @@ output$print1bis <- renderDataTable({
                     sep="")
      
         copypaste <- paste("http://localhost:8081/run/marius1?mechanisms=", mec, time, "&parameters=", param, sep="")
-     modelruns1959 <- modelruns1959 + 1
+     modelruns1959 <<- modelruns1959 + 1
       }
    
    
@@ -501,7 +501,7 @@ output$print1bis <- renderDataTable({
                     sep="")
      
             copypaste <- paste("http://localhost:8081/run/marius1?mechanisms=", mec, time, "&parameters=", param, sep="")
-      modelruns1989 <- modelruns1989 + 1
+      modelruns1989 <<- modelruns1989 + 1
           }
 
       download.file(copypaste, destfile = paste("data/marius", input$period2, ".csv", sep=""), method = "curl")
@@ -550,6 +550,12 @@ output$modelcombi3 <- renderPrint({
   if (any(listmec == "Urban Transition")) mod <- paste(mod, " + UrbanTransition", sep="")
   paste("Model combination : ", input$choice_run, " | ", mod, time, sep="")
 })
+
+output$runs <- renderPrint({
+  run <- modelruns1959
+  run
+})
+
  output$graph2 <- renderPlot({
    
    beginyear <- substr(input$period2, 1, 4)
