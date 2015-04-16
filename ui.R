@@ -322,7 +322,23 @@ shinyUI(fluidPage(
                                                    selected = "2010")))
              ),
              plotOutput("graph3"),
-             verbatimTextOutput("modelcombi3")
+             verbatimTextOutput("modelcombi3"),
+             h3("Contribution of attributes' interactions to the variation of residuals"),
+             fluidRow(
+               column(6,
+                      selectInput("Attribute1", 
+                                  label = "Attribute 1", 
+                                  choices = list("Location", "Status", "Oil&Gas",
+                                                 "Coal", "Specialisation", "Size"),
+                                  selected = "Status")),
+               column(6,
+                      selectInput("Attribute2", 
+                                  label = "Attribute 2", 
+                                  choices = list("Location", "Status", "Oil&Gas",
+                                                 "Coal", "Specialisation", "Size"),
+                                  selected = c("Size")))
+             ),
+             plotOutput("graph3interaction")
     ),
     "-----",
     tabPanel("About", h2("About"),

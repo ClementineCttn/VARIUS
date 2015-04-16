@@ -885,5 +885,98 @@ output$modelcombi3 <- renderPrint({
    
  })
  
+output$graph3interaction <- renderPlot({ 
+  selectedAtt <- input$Attribute1
+  interactingAtt <- input$Attribute2
+  
+  if (selectedAtt != interactingAtt) {
+    
+  marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
+  
+  
+  if (input$period2  == "1959-1989") {
+    observed <- input$year_sim2a
+    mariusstep0 <- subset(marius, step == 0)
+    mariusstep11 <- subset(marius, step == 11)
+    mariusstep20 <- subset(marius, step == 20)
+    mariusstep30 <- subset(marius, step == 30)
+    
+    if (observed == "Pop1989") table <- mariusstep30
+    if (observed == "Pop1979") table <- mariusstep20
+    if (observed == "Pop1970") table <- mariusstep11
+    if (observed == "Pop1959") table <- mariusstep0
+  }
+  
+  if (input$period2  == "1989-2010") {
+    observed <- input$year_sim2b
+    mariusstep0 <- subset(marius, step == 0)
+    mariusstep13 <- subset(marius, step == 13)
+    mariusstep21 <- subset(marius, step == 21)
+    
+    if (observed == "Pop2010") table <- mariusstep21
+    if (observed == "Pop2002") table <- mariusstep13
+    if (observed == "Pop1989") table <- mariusstep0
+    
+  }
+  
+  
+  Year <- subset(name_col, name == observed)
+  Year <- as.numeric(Year[1,2])
+  
+  Agglo@data <- data.frame(Agglo@data, table[match(Agglo@data$AROKATO,table$arokato), ])
+  
+  Agglo <- Agglo[!is.na(Agglo@data$population), ]
+  
+  Agglo@data <- Agglo@data[order(-Agglo@data[,Year]) , ]
+  Agglo@data$Residuals <- log(Agglo@data[,Year]) - log(Agglo@data$population) 
+  Agglo@data$Population <- Agglo@data[,Year]
+  res <- Agglo@data
+  res$OilGas <- res$Hydrocarbo
+  res$Western <- res$West.East
+  res$MonoIndustry <- res$MONOGOROD
+  
+  
+  if (selectedAtt == "Location") res$Attribute1 <- res$Western
+  if (selectedAtt == "Status") res$Attribute1 <- res$Capital
+  if (selectedAtt == "Oil&Gas") res$Attribute1 <- res$OilGas
+  if (selectedAtt == "Coal") res$Attribute1 <- res$Coal
+  if (selectedAtt == "Specialisation") res$Attribute1 <- res$MonoIndustry
+  if (selectedAtt == "Size") res$Attribute1 <- log(res$Population)
  
+  if (interactingAtt == "Location") res$Attribute2 <- res$Western
+  if (interactingAtt == "Status") res$Attribute2 <- res$Capital
+  if (interactingAtt == "Oil&Gas") res$Attribute2 <- res$OilGas
+  if (interactingAtt == "Coal") res$Attribute2 <- res$Coal
+  if (interactingAtt == "Specialisation") res$Attribute2 <- res$MonoIndustry
+  if (interactingAtt == "Size") res$Attribute2 <- log(res$Population)
+  
+  
+  model <- lm(Residuals ~ Attribute1 + 
+                Attribute1 * Attribute2 +
+                Attribute2, 
+              data=res)
+ 
+  summary(model)
+  coef <- summary(model)$coefficient
+  
+  data <- as.data.frame(coef[,1])
+  sign <- as.data.frame(coef[,4])
+  colnames(data) <- c("Residual")
+  colnames(sign) <- c("Significant")
+  sign$Significant <- ifelse(sign$Significant < 0.01, "1.yes", "2.no")
+  sign$UrbanAttribute <- rownames(sign)
+  data$UrbanAttribute <- rownames(data)
+  data <- cbind(data, sign)
+  
+  p <- ggplot(aes(x=UrbanAttribute, fill=Significant), data=data)
+  plot1 <- p + geom_bar(aes(y=Residual), stat="identity") +
+    scale_fill_manual(values = c("dodgerblue", "gray30")) + 
+    theme(axis.text=element_text(size=12) ,
+          axis.title=element_text(size=14),
+          axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  plot1
+  }
+})
+
 })
