@@ -257,7 +257,65 @@ output$map1ter <- renderPlot({
   })
   
   
+output$graphinteraction <- renderPlot({ 
+  significant <- input$pvalue / 100
+  current_generation <- "400000"
   
+  selectedMec <- input$mechanismInteractions
+  interactingMec <- input$mechanismsInteractions
+  
+  calibration <- read.csv(paste("data/population", current_generation, ".csv", sep=""), dec=".", sep=",")
+  calibration <- subset(calibration, distribution != "Inf")
+  
+  calibration$Bonus_ <- calibration$fr.geocites.gugus.balance.Bonus
+  calibration$Cost_ <- calibration$fr.geocites.gugus.transaction.FixedCostTransaction
+  calibration$Resources_ <- calibration$fr.geocites.marius.SubSurfaceResources
+  calibration$Redistribution_ <- calibration$fr.geocites.marius.DoubleRedistribution
+  calibration$Transition_ <- calibration$fr.geocites.gugus.urbanisation.UrbanTransition
+  calibration$X1959_1989_ <- calibration$fr.geocites.marius.From1959To1989
+  
+ if (selectedMec != interactingMec) {
+ 
+  if (selectedMec == "Bonus") calibration$Mech1 <- calibration$Bonus_
+  if (selectedMec == "Fixed Costs") calibration$Mech1 <- calibration$Cost_ 
+  if (selectedMec == "Resources") calibration$Mech1 <- calibration$Resources_
+  if (selectedMec == "Redistribution") calibration$Mech1 <- calibration$Redistribution_
+  if (selectedMec == "Urban Transition") calibration$Mech1 <- calibration$Transition_
+  
+  if (interactingMec == "Bonus") calibration$Mech2 <- calibration$Bonus_
+  if (interactingMec == "Fixed Costs") calibration$Mech2 <- calibration$Cost_ 
+  if (interactingMec == "Resources") calibration$Mech2  <- calibration$Resources_
+  if (interactingMec == "Redistribution") calibration$Mech2  <- calibration$Redistribution_
+  if (interactingMec == "Urban Transition") calibration$Mech2  <- calibration$Transition_
+  
+    model <- lm(distribution ~ Mech1 + 
+                  Mech1 * Mech2 + 
+                  Mech2 +
+                                            X1959_1989_, 
+                                          data=calibration)
+ 
+  summary(model)
+  coef <- summary(model)$coefficient
+  data <- as.data.frame(coef[,1])
+  sign <- as.data.frame(coef[,4])
+  colnames(data) <- c("DistanceToData")
+  colnames(sign) <- c("Significant")
+  sign$Significant <- ifelse(sign$Significant < significant, "1.yes", "2.no")
+  sign$Mechanism <- rownames(sign)
+  data$Mechanism <- rownames(data)
+  data <- cbind(data, sign)
+  
+  p <- ggplot(aes(x=Mechanism, fill=Significant), data=data)
+  plot1 <- p + geom_bar(aes(y=DistanceToData), stat="identity") +
+    scale_fill_manual(values = c("dodgerblue", "gray30")) + 
+    theme(axis.text=element_text(size=12) ,
+          axis.title=element_text(size=14),
+          axis.text.x = element_text(angle = 45, hjust = 1))
+  plot1
+ }
+})
+
+
   
  output$print1 <- renderDataTable({
    

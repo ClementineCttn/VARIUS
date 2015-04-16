@@ -93,7 +93,23 @@ shinyUI(fluidPage(
               <span class="mark" title="Significance is given with a probability of error of the chosen percentage">
               coefficient</span> for each activated mechanism, in comparison with the
               same model structure without this mechanism, everything else being equal.')),
-             plotOutput("graph1")
+             plotOutput("graph1"),
+             h3("Contribution of mechanisms' interactions to the quality of simulation (closeness to data)"),
+             fluidRow(
+               column(6,
+                      selectInput("mechanismInteractions", 
+                                         label = "Mechanism 1", 
+                                         choices = list("Bonus", "Fixed Costs", "Resources",
+                                                        "Redistribution", "Urban Transition"),
+                                         selected = "Bonus")),
+               column(6,
+                      selectInput("mechanismsInteractions", 
+                                         label = "Mechanism 2", 
+                                         choices = list("Bonus", "Fixed Costs", "Resources",
+                                                        "Redistribution", "Urban Transition"),
+                                         selected = c("Fixed Costs")))
+             ),
+             plotOutput("graphinteraction")
     ),
     
     tabPanel("Choose Mechanisms' combination", 
