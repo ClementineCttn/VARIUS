@@ -43,9 +43,13 @@ plotAttribute <- function(attribute, Attcolor, Attnames) {
        par()$usr[3] + 270000, 
        "1000 km", cex = 0.8)
 }
+
+modelnumber <- 0
+
+
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-  
+   
   output$map1 <- renderPlot({ 
     Year <- subset(name_col, name == input$Census_year)
     Year <- as.numeric(Year[1,2])
@@ -500,7 +504,8 @@ output$print1bis <- renderDataTable({
           }
 
       download.file(copypaste, destfile = paste("data/marius", input$period2, ".csv", sep=""), method = "curl")
-      "Done!"
+   modelnumber <- modelnumber + 1   
+   "Done!"
    
    }
    

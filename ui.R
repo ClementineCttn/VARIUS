@@ -40,7 +40,7 @@ shinyUI(fluidPage(
                                                 "1970"="Pop1970", "1959"="Pop1959",
                                                  "1939"="Pop1939", "1926"= "Pop1926",
                                                 "1897"="Pop1897"),
-                                     selected = "1959")),
+                                     selected = "Pop1959")),
                   column(6,
                          sliderInput("sizefactor1",
                                      label = "Population size factor",
@@ -57,14 +57,14 @@ shinyUI(fluidPage(
                                         "1970"="Pop1970", "1959"="Pop1959",
                                         "1939"="Pop1939", "1926"= "Pop1926",
                                         "1897"="Pop1897"),
-                            selected = "2002")),
+                            selected = "Pop2002")),
                 column(6,
                        selectInput("Census_year2", label = "Second Census year",
                             choices = c("2010" = "Pop2010", "2002"="Pop2002",
                                         "1989"="Pop1989", "1979"="Pop1979", 
                                         "1970"="Pop1970", "1959"="Pop1959",
                                         "1939"="Pop1939", "1926"= "Pop1926"),
-                            selected = "2010"))
+                            selected = "Pop2010"))
               ),
               plotOutput("map1bis"),
               h3("Urban Statuses & Attributes"),
@@ -253,8 +253,8 @@ shinyUI(fluidPage(
             
     ),
             
-    "How close are we ?",
-    tabPanel("Macro Analysis",
+    "How close are we ?", 
+     tabPanel("Macro Analysis",
              h3("Macro-geographic analysis"),
              tags$p(class="text-justify",
                     "This rank-size representation is common to study the hierarchical
@@ -281,7 +281,7 @@ shinyUI(fluidPage(
                                        selectInput("year_sima", label = "Simulated Year",
                                                    choices = c("1989"="Pop1989", "1979"="Pop1979", 
                                                                "1970"="Pop1970", "1959"="Pop1959"), 
-                                                   selected = "1989")    
+                                                   selected = "Pop1989")    
                                 )),
                conditionalPanel(condition = "input.period2 == '1989-2010'",
                                 
@@ -289,7 +289,7 @@ shinyUI(fluidPage(
                                        selectInput("year_simb", label = "Simulated Year",
                                                    choices = c("2010" = "Pop2010", "2002"="Pop2002",
                                                                "1989"="Pop1989"), 
-                                                   selected = "2010")    
+                                                   selected = "Pop2010")    
                                 ))
                
              ),
@@ -313,16 +313,15 @@ shinyUI(fluidPage(
                      selectInput("year_sim2a", label = "Simulated Year",
                      choices = c("1989"="Pop1989", "1979"="Pop1979", 
                                  "1970"="Pop1970", "1959"="Pop1959"),
-                     selected = "1989"))),                     
+                     selected = "Pop1989"))),                     
                conditionalPanel(condition = "input.period2 == '1989-2010'",
                                 column(6,
                                        selectInput("year_sim2b", label = "Simulated Year",
                                                    choices = c("2010" = "Pop2010", "2002"="Pop2002",
                                                                "1989"="Pop1989"),
-                                                   selected = "2010")))
+                                                   selected = "Pop2010")))
              ),
              plotOutput("graph3"),
-             verbatimTextOutput("modelcombi3"),
              h3("Contribution of attributes' interactions to the variation of residuals"),
              fluidRow(
                column(6,
@@ -338,7 +337,8 @@ shinyUI(fluidPage(
                                                  "Coal", "Specialisation", "Size"),
                                   selected = c("Size")))
              ),
-             plotOutput("graph3interaction")
+             plotOutput("graph3interaction"),
+             verbatimTextOutput("modelcombi3")
     ),
     "-----",
     tabPanel("About", h2("About"),
