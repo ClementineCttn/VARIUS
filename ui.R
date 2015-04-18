@@ -255,7 +255,6 @@ shinyUI(fluidPage(
     ),
             
     "How close are we ?", 
-    tabPanel("runs",verbatimTextOutput("runs")),
      tabPanel("Macro Analysis",
              h3("Macro-geographic analysis"),
              tags$p(class="text-justify",

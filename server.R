@@ -47,8 +47,7 @@ plotAttribute <- function(attribute, Attcolor, Attnames) {
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-  modelruns1959 <- 0
-  modelruns1989 <- 0
+  modelRuns <- reactiveValues(period1 = FALSE, periode2 = FALSE)
   
   output$map1 <- renderPlot({ 
     Year <- subset(name_col, name == input$Census_year)
@@ -472,7 +471,7 @@ output$print1bis <- renderDataTable({
                     sep="")
      
         copypaste <- paste("http://localhost:8081/run/marius1?mechanisms=", mec, time, "&parameters=", param, sep="")
-     modelruns1959 <<- modelruns1959 + 1
+     modelRuns$period1 <- TRUE
       }
    
    
@@ -501,7 +500,7 @@ output$print1bis <- renderDataTable({
                     sep="")
      
             copypaste <- paste("http://localhost:8081/run/marius1?mechanisms=", mec, time, "&parameters=", param, sep="")
-      modelruns1989 <<- modelruns1989 + 1
+      modelRuns$period2 <- TRUE
           }
 
       download.file(copypaste, destfile = paste("data/marius", input$period2, ".csv", sep=""), method = "curl")
@@ -551,21 +550,16 @@ output$modelcombi3 <- renderPrint({
   paste("Model combination : ", input$choice_run, " | ", mod, time, sep="")
 })
 
-output$runs <- renderPrint({
-  run <- modelruns1959
-  run
-})
-
  output$graph2 <- renderPlot({
    
    beginyear <- substr(input$period2, 1, 4)
-   if (input$period2  == "1959-1989") run <- modelruns1959
-   if (input$period2  == "1989-2010") run <- modelruns1989
+   if (input$period2  == "1959-1989") run <-  modelRuns$period1
+   if (input$period2  == "1989-2010") run <-  modelRuns$period2
    
-   if (run == 0) {
+   if (run == "FALSE") {
    marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
    }
-   if (run > 0) {
+   if (run == "TRUE") {
     marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
    }
    
@@ -670,13 +664,13 @@ output$runs <- renderPrint({
 
    cutoff <- input$cutoff
    
-   if (input$period2  == "1959-1989") run <- modelruns1959
-   if (input$period2  == "1989-2010") run <- modelruns1989
+   if (input$period2  == "1959-1989") run <-  modelRuns$period1
+   if (input$period2  == "1989-2010") run <-  modelRuns$period2
    
-   if (run == 0) {
+   if (run == "FALSE")  {
      marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
    }
-   if (run > 0) {
+   if (run == "TRUE")  {
      marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
    }
    
@@ -841,13 +835,13 @@ output$runs <- renderPrint({
    
  output$graph3 <- renderPlot({
 
-   if (input$period2  == "1959-1989") run <- modelruns1959
-   if (input$period2  == "1989-2010") run <- modelruns1989
+   if (input$period2  == "1959-1989") run <-  modelRuns$period1
+   if (input$period2  == "1989-2010") run <-  modelRuns$period2
    
-   if (run == 0) {
+   if (run == "FALSE")  {
      marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
    }
-   if (run > 0) {
+   if (run == "TRUE")  {
      marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
    }
    
@@ -928,13 +922,13 @@ output$graph3interaction <- renderPlot({
   
   if (selectedAtt != interactingAtt) {
     
-    if (input$period2  == "1959-1989") run <- modelruns1959
-    if (input$period2  == "1989-2010") run <- modelruns1989
+    if (input$period2  == "1959-1989") run <-  modelRuns$period1
+    if (input$period2  == "1989-2010") run <-  modelRuns$period2
     
-    if (run == 0) {
+    if (run == "FALSE") {
       marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
     }
-    if (run > 0) {
+    if (run == "TRUE")  {
       marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
     }
     
