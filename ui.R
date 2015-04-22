@@ -78,6 +78,35 @@ shinyUI(fluidPage(
     ),
     
     "How to simulate it ?",
+    tabPanel("Selected mechanisms",
+             fluidRow(
+               tags$p(class="text-justify",
+                      'blablabla'),
+               h3("The Cornerstone model"),
+               column(12, img(src = "mech_0.png",class="img-responsive")),
+               tags$p(class="text-justify",
+                      'blablabla'),
+               h3("Bonified Interurban Exchanges"),
+               column(12, img(src = "mech_bonus.png",class="img-responsive")),
+               tags$p(class="text-justify",
+                      'blablabla'),
+               h3("Costly Interactions"),
+               column(12, img(src = "mech_cost.png",class="img-responsive")),
+               tags$p(class="text-justify",
+                      'blablabla'),
+               h3("Environmental resources"),
+               column(12, img(src = "mech_resource.png",class="img-responsive")),
+               tags$p(class="text-justify",
+                      'blablabla'),
+               h3("Redistributive regions"),
+               column(12, img(src = "mech_redistribution.png",class="img-responsive")),
+               tags$p(class="text-justify",
+                      'blablabla'),
+               h3("Time-lags in regional transitions"),
+               column(12, img(src = "mech_transition.png",class="img-responsive")),
+               tags$p(class="text-justify",
+                      'blablabla'))
+             ),
     tabPanel("Model Structures Analysis",
              h3("Contribution of mechanisms to the quality of simulation (closeness to data)"),
              fluidRow(
@@ -155,7 +184,8 @@ shinyUI(fluidPage(
                                 h3("Generic parameters"),
                                 fluidRow(
                                   
-                              
+                                  
+                                  
                                   column(4, sliderInput("populationToWealthExponent",
                                                         label = "populationToWealthExponent",
                                                         min = 1, max = 5, value = 1.1, step = 0.0001)),
