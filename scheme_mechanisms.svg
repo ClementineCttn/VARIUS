@@ -1,0 +1,1699 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="scheme_mechanisms.svg"
+   inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6998">
+      <stop
+         style="stop-color:#ffdd54;stop-opacity:1;"
+         offset="0"
+         id="stop7000" />
+      <stop
+         style="stop-color:#ffdd54;stop-opacity:0;"
+         offset="1"
+         id="stop7002" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6931">
+      <stop
+         style="stop-color:#333333;stop-opacity:1;"
+         offset="0"
+         id="stop6933" />
+      <stop
+         style="stop-color:#333333;stop-opacity:0;"
+         offset="1"
+         id="stop6935" />
+    </linearGradient>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker6545"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6547"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5944"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5946" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker5572"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path5574"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker5080"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path5082"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker5058"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5060"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4788"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6931"
+       id="linearGradient6937"
+       x1="302.59842"
+       y1="1049.4685"
+       x2="372.04724"
+       y2="1049.4685"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-641.00542,35.361165)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6998"
+       id="linearGradient7004"
+       x1="-622.58612"
+       y1="1084.8296"
+       x2="-552.1373"
+       y2="1084.8296"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(3.3070866,13.173228)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2095238"
+     inkscape:cx="369.72644"
+     inkscape:cy="329.09024"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="796"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4136"
+       width="593.07349"
+       height="187.97223"
+       x="79.269234"
+       y="46.250099"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       y="286.25009"
+       x="83.269234"
+       height="187.97223"
+       width="593.07349"
+       id="rect4138"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.76192147px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 391.90392,207.7466 c 0,-1.99723 0,-133.315098 0,-133.315098"
+       id="path4237"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="139.33577"
+       y="79.871887"
+       id="text4245"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4247"
+         x="139.33577"
+         y="79.871887"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'">Distribution of...</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4249"
+       y="211.62796"
+       x="94.846428"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+         y="211.62796"
+         x="94.846428"
+         id="tspan4251"
+         sodipodi:role="line">Population</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="290.70685"
+       y="204.04282"
+       id="text4253"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4255"
+         x="290.70685"
+         y="204.04282"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle">Wealth, production</tspan><tspan
+         sodipodi:role="line"
+         x="290.70685"
+         y="222.79282"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         id="tspan4257">consumption</tspan></text>
+    <g
+       id="g4293"
+       transform="translate(-1.4683838,-40)"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         transform="translate(0,15.266727)"
+         id="g4264">
+        <circle
+           style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path4148"
+           cx="116.35159"
+           cy="165.06839"
+           r="24.082726" />
+        <circle
+           style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path4150"
+           cx="158.92642"
+           cy="165.06839"
+           r="10.321168" />
+        <circle
+           style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path4152"
+           cx="183.43919"
+           cy="165.06839"
+           r="6.0206814" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4269"
+         y="184.99538"
+         x="99.191002"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';fill:#ffffff"
+           y="184.99538"
+           x="99.191002"
+           id="tspan4271"
+           sodipodi:role="line">city A</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="155.19101"
+         y="184.99538"
+         id="text4277"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4279"
+           x="155.19101"
+           y="184.99538"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';fill:#ffffff">B</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4285"
+         y="198.99538"
+         x="179.19101"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';fill:#000000"
+           y="198.99538"
+           x="179.19101"
+           id="tspan4287"
+           sodipodi:role="line">C</tspan></text>
+    </g>
+    <g
+       id="g4259"
+       transform="translate(1.1829681,-40.215023)"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <circle
+         style="opacity:1;fill:#ffd42a;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4239"
+         cx="267.08212"
+         cy="180.55014"
+         r="39.13443" />
+      <circle
+         style="opacity:1;fill:#ffd42a;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4241"
+         cx="324.27856"
+         cy="180.55014"
+         r="10.321168" />
+      <circle
+         style="opacity:1;fill:#ffd42a;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle4243"
+         cx="345.35095"
+         cy="180.55014"
+         r="3.0103407" />
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4273"
+       y="144.99538"
+       x="250.37398"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';fill:#ffffff"
+         y="144.99538"
+         x="250.37398"
+         id="tspan4275"
+         sodipodi:role="line">city A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="320.37396"
+       y="144.99538"
+       id="text4281"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4283"
+         x="320.37396"
+         y="144.99538"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';fill:#ffffff">B</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4289"
+       y="158.99538"
+       x="342.37396"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';fill:#000000"
+         y="158.99538"
+         x="342.37396"
+         id="tspan4291"
+         sodipodi:role="line">C</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4408"
+       y="79.871887"
+       x="455.33575"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
+         y="79.871887"
+         x="455.33575"
+         id="tspan4410"
+         sodipodi:role="line">Interaction of...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="536.51001"
+       y="204.36325"
+       id="text4412"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4414"
+         x="539.11011"
+         y="204.36325"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle">cities based on their supply, </tspan><tspan
+         sodipodi:role="line"
+         x="536.51001"
+         y="223.11325"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         id="tspan4483">demand and proximity</tspan></text>
+    <circle
+       r="24.082726"
+       cy="129.15384"
+       cx="468.72751"
+       id="circle4426"
+       style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="10.321168"
+       cy="160.11736"
+       cx="534.52496"
+       id="circle4428"
+       style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="6.0206814"
+       cy="122.27306"
+       cx="607.20319"
+       id="circle4430"
+       style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 499.09491,122.59695 93.75062,-1.72019 0,4.30049 -92.89052,2.58029 z"
+       id="path4477"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 549.84066,154.42056 2.58029,2.58029 44.72506,-27.52312 -2.58029,-1.72019 z"
+       id="path4479"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 496.51462,138.07871 -8.60097,12.90146 28.38321,12.04136 6.88078,-14.62165 z"
+       id="path4481"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 224.88892,400.0314 3.61538,-0.49475 5.12484,-52.26461 -2.93036,1.01486 z"
+       id="path4542"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:transform-center-x="-20.499885"
+       inkscape:transform-center-y="-4.953767" />
+    <circle
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       style="opacity:1;fill:#ffdd54;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle4504"
+       cx="159.59915"
+       cy="383.72198"
+       r="24.082726" />
+    <circle
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       style="opacity:1;fill:#666666;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle4506"
+       cx="225.39661"
+       cy="414.68549"
+       r="10.321168" />
+    <circle
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       style="opacity:1;fill:#666666;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle4508"
+       cx="298.07486"
+       cy="376.84119"
+       r="6.0206814" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:connector-curvature="0"
+       id="path4510"
+       d="m 189.96656,377.16509 93.75062,-1.72019 0,4.30049 -92.89052,2.58029 z"
+       style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4512"
+       d="m 240.71231,408.9887 2.58029,2.58029 44.72506,-27.52312 -2.58029,-1.72019 z"
+       style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:connector-curvature="0"
+       id="path4514"
+       d="m 187.38627,392.64685 -8.60097,12.90146 28.38321,12.04136 6.88078,-14.62165 z"
+       style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <circle
+       r="3.8704379"
+       cy="335.98654"
+       cx="234.8577"
+       id="circle4516"
+       style="opacity:1;fill:#666666;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 183.92101,363.29 41.20983,-24.60253 1.74229,2.64103 -40.47689,24.91473 z"
+       id="path4520"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 367.84282,361.32081 31.41616,18.13813 -31.51484,17.0404"
+       id="path4522"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="24.082726"
+       cy="383.72198"
+       cx="479.59915"
+       id="circle4524"
+       style="opacity:1;fill:#666666;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="10.321168"
+       cy="414.68549"
+       cx="545.39661"
+       id="circle4526"
+       style="opacity:1;fill:#666666;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="6.0206814"
+       cy="376.84119"
+       cx="618.07483"
+       id="circle4528"
+       style="opacity:1;fill:#c2c2c2;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 509.96656,377.16509 93.75062,-1.72019 0,4.30049 -92.89052,2.58029 z"
+       id="path4530"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 560.71231,408.9887 2.58029,2.58029 44.72506,-27.52312 -2.58029,-1.72019 z"
+       id="path4532"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 507.38627,392.64685 -8.60097,12.90146 28.38321,12.04136 6.88078,-14.62165 z"
+       id="path4534"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       style="opacity:1;fill:#ffdd54;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle4536"
+       cx="554.85767"
+       cy="335.98654"
+       r="3.8704379" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:connector-curvature="0"
+       id="path4540"
+       d="m 503.92101,363.29 41.20983,-24.60253 1.74229,2.64103 -40.47689,24.91473 z"
+       style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:transform-center-y="-4.953767"
+       inkscape:transform-center-x="-20.499885"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4544"
+       d="m 545.70524,400.0314 3.61538,-0.49475 5.12484,-52.26461 -2.93036,1.01486 z"
+       style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       sodipodi:linespacing="125%"
+       id="text4546"
+       y="316.95828"
+       x="379.8609"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';text-align:center;text-anchor:middle"
+         y="316.95828"
+         x="379.8609"
+         id="tspan4548"
+         sodipodi:role="line">Interaction benefits more...</tspan></text>
+    <text
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_0.png"
+       sodipodi:linespacing="100%"
+       id="text4576"
+       y="204.04282"
+       x="290.70685"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         y="204.04282"
+         x="290.70685"
+         id="tspan4578"
+         sodipodi:role="line">Wealth, production</tspan><tspan
+         id="tspan4580"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         y="222.79282"
+         x="290.70685"
+         sodipodi:role="line">consumption</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="379.75104"
+       y="454.63165"
+       id="text4582"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         x="379.75104"
+         y="454.63165"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         id="tspan4586">Cities that have many partners and important economic flows</tspan></text>
+    <rect
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4708"
+       width="593.07349"
+       height="187.97223"
+       x="83.269234"
+       y="509.8754" />
+    <path
+       inkscape:transform-center-y="-4.953767"
+       inkscape:transform-center-x="-20.499885"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4710"
+       d="m 224.88892,625.65671 3.61538,-0.49475 5.12484,-52.26461 -2.93036,1.01486 z"
+       style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <circle
+       r="24.082726"
+       cy="609.34729"
+       cx="159.59915"
+       id="circle4712"
+       style="opacity:1;fill:#848484;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="10.321168"
+       cy="640.31079"
+       cx="225.39661"
+       id="circle4714"
+       style="opacity:1;fill:#666666;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="6.0206814"
+       cy="602.46649"
+       cx="298.07486"
+       id="circle4716"
+       style="opacity:1;fill:#666666;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 189.96656,602.7904 93.75062,-1.72019 0,4.30049 -92.89052,2.58029 z"
+       id="path4718"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 240.71231,634.61401 2.58029,2.58029 44.72506,-27.52312 -2.58029,-1.72019 z"
+       id="path4720"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 187.38627,618.27216 -8.60097,12.90146 28.38321,12.04136 6.88078,-14.62165 z"
+       id="path4722"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       style="opacity:1;fill:#666666;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle4724"
+       cx="234.8577"
+       cy="561.61188"
+       r="3.8704379" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:connector-curvature="0"
+       id="path4726"
+       d="m 183.92101,588.91531 41.20983,-24.60253 1.74229,2.64103 -40.47689,24.91473 z"
+       style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <circle
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       style="opacity:1;fill:#666666;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle4730"
+       cx="479.59915"
+       cy="609.34729"
+       r="24.082726" />
+    <circle
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       style="opacity:1;fill:#666666;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle4732"
+       cx="545.39661"
+       cy="640.31079"
+       r="10.321168" />
+    <circle
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       style="opacity:1;fill:#848484;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle4734"
+       cx="618.07483"
+       cy="602.46649"
+       r="6.0206814" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:connector-curvature="0"
+       id="path4736"
+       d="m 509.96656,602.7904 93.75062,-1.72019 0,4.30049 -92.89052,2.58029 z"
+       style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:connector-curvature="0"
+       id="path4740"
+       d="m 507.38627,618.27216 -8.60097,12.90146 28.38321,12.04136 6.88078,-14.62165 z"
+       style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <circle
+       r="3.8704379"
+       cy="561.61188"
+       cx="554.85767"
+       id="circle4742"
+       style="opacity:1;fill:#848484;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="379.8609"
+       y="540.58362"
+       id="text4748"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan4750"
+         x="379.8609"
+         y="540.58362"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';text-align:center;text-anchor:middle">Interacting is costly...</tspan></text>
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4756"
+       d="m 240.71231,634.61401 2.58029,2.58029 44.72506,-27.52312 -2.58029,-1.72019 z"
+       style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:transform-center-x="133.31509"
+       inkscape:transform-center-y="30.103408" />
+    <g
+       id="g6444"
+       transform="translate(-6,-10.941781)"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4760"
+         d="m 326.84933,618.55235 12.55462,0 0,4.14264 -12.47853,0 z"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.73826587px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+         sodipodi:linespacing="100%"
+         id="text4762"
+         y="627.25671"
+         x="355.53754"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:start;text-anchor:start"
+           y="627.25671"
+           x="355.53754"
+           sodipodi:role="line"
+           id="tspan6360">fixed cost</tspan></text>
+    </g>
+    <g
+       id="g6438"
+       transform="translate(-6,-2.0000084)"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         style="fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.73826587px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 326.47335,576.73346 12.55462,0 0,4.14264 -12.47853,0 z"
+         id="path4766"
+         inkscape:connector-curvature="0" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="354.71356"
+         y="576.45618"
+         id="text4768"
+         sodipodi:linespacing="100%"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           x="354.71356"
+           y="576.45618"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:start;text-anchor:start"
+           id="tspan4770">potential</tspan><tspan
+           sodipodi:role="line"
+           x="354.71356"
+           y="595.20618"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:start;text-anchor:start"
+           id="tspan6358">interaction</tspan></text>
+    </g>
+    <g
+       id="g6430"
+       transform="translate(-6,-14.000008)"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         transform="translate(-121.3878,-24.638932)"
+         id="g6371">
+        <path
+           inkscape:connector-curvature="0"
+           id="path4780"
+           d="m 448.23713,674.86109 12.55462,0 0,11.53634 -12.47853,0 z"
+           style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.73826587px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.73826587px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 448.23713,682.25479 12.55462,0 0,4.14264 -12.47853,0 z"
+           id="path4772"
+           inkscape:connector-curvature="0" />
+      </g>
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+         sodipodi:linespacing="100%"
+         id="text4774"
+         y="653.44202"
+         x="354.71356"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan4776"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:start;text-anchor:start"
+           y="653.44202"
+           x="354.71356"
+           sodipodi:role="line">profitable</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:start;text-anchor:start"
+           y="672.19202"
+           x="354.71356"
+           sodipodi:role="line"
+           id="tspan6364">interaction</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#marker5080)"
+       d="M 503.34646,590.54331 543.85827,567.3937"
+       id="path4782"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#marker5572)"
+       d="m 547.16536,626.09449 6.61417,-54.56693"
+       id="path5570"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5942"
+       d="m 560.39371,633.53543 47.95275,-20.66929"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#marker5944)"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+       sodipodi:linespacing="100%"
+       id="text6449"
+       y="684.63165"
+       x="379.75104"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan6451"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         y="684.63165"
+         x="379.75104"
+         sodipodi:role="line">Therefore, only prospects of significant exchanges are realized</tspan></text>
+    <rect
+       y="733.93054"
+       x="84.922775"
+       height="187.97223"
+       width="593.07349"
+       id="rect6465"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_resource.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_resource.png"
+       sodipodi:linespacing="125%"
+       id="text6497"
+       y="764.63873"
+       x="382.11871"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';text-align:center;text-anchor:middle"
+         y="764.63873"
+         x="382.11871"
+         id="tspan6499"
+         sodipodi:role="line">The environment provides resources...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="381.72046"
+       y="908.68677"
+       id="text6541"
+       sodipodi:linespacing="100%"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_resource.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         x="381.72046"
+         y="908.68677"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         id="tspan6543">That benefit or disadvantage cities unevenly in space</tspan></text>
+    <g
+       id="g6685"
+       transform="translate(-22.764576,0)"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_resource.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <circle
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+         style="opacity:1;fill:#c2c2c2;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle6649"
+         cx="231.32358"
+         cy="810.04016"
+         r="24.082726" />
+      <path
+         style="fill:#ffdd54;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 294.95275,842.14961 c 0,0 -8.26771,-22.32284 15.70867,-20.6693 23.97638,1.65355 23.14961,24.80315 31.41733,17.36221 24.56987,3.25398 15.70865,24.80315 15.70865,24.80315 -19.84251,14.88189 -51.50714,12.48642 -56.22047,-1.65355 z"
+         id="path6651"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccsc" />
+      <circle
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+         style="opacity:1;fill:#848484;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle6653"
+         cx="322.75095"
+         cy="853.40527"
+         r="10.321168" />
+      <circle
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+         style="opacity:1;fill:#c2c2c2;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle6655"
+         cx="380.54724"
+         cy="790.75781"
+         r="9.3277683" />
+      <circle
+         r="3.8704379"
+         cy="794.54889"
+         cx="281.77896"
+         id="circle6657"
+         style="opacity:1;fill:#c2c2c2;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <circle
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+         style="opacity:1;fill:#848484;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle6659"
+         cx="343.92065"
+         cy="855.38354"
+         r="3.8704379" />
+      <ellipse
+         style="opacity:1;fill:#ffdd54;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1"
+         id="ellipse6661"
+         cx="373.49609"
+         cy="837.18896"
+         rx="14.055119"
+         ry="10.748032" />
+      <circle
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+         style="opacity:1;fill:#848484;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle6663"
+         cx="376.85767"
+         cy="836.71423"
+         r="6.3507528" />
+      <circle
+         r="3.0436661"
+         cy="822.65906"
+         cx="351.22778"
+         id="circle6665"
+         style="opacity:1;fill:#c2c2c2;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+         sodipodi:linespacing="100%"
+         id="text6667"
+         y="866.59161"
+         x="367.5246"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffdd54;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:start;text-anchor:start;fill:#ffdd54;fill-opacity:1"
+           y="866.59161"
+           x="367.5246"
+           sodipodi:role="line"
+           id="tspan6671">Local valuable resource</tspan></text>
+      <ellipse
+         style="opacity:1;fill:#3388cd;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:6, 6;stroke-dashoffset:0;stroke-opacity:1"
+         id="ellipse6675"
+         cx="456.77167"
+         cy="804.1181"
+         rx="14.055119"
+         ry="10.748032" />
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_bonus.png"
+         sodipodi:linespacing="100%"
+         id="text6677"
+         y="807.06409"
+         x="476.43011"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#3388cd;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:start;text-anchor:start;fill:#3388cd;fill-opacity:1"
+           y="807.06409"
+           x="476.43011"
+           sodipodi:role="line"
+           id="tspan6679">Local constaint</tspan></text>
+      <circle
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_cost.png"
+         style="opacity:1;fill:#c2c2c2;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle6681"
+         cx="460.36163"
+         cy="808.60394"
+         r="3.0436661" />
+    </g>
+    <rect
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       y="-214.18297"
+       x="72.65506"
+       height="187.97223"
+       width="593.07349"
+       id="rect6702"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       sodipodi:linespacing="125%"
+       id="text6706"
+       y="-180.56119"
+       x="92.721603"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
+         y="-180.56119"
+         x="92.721603"
+         id="tspan6708"
+         sodipodi:role="line">Contribution</tspan></text>
+    <text
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="86.57872"
+       y="-42.057072"
+       id="text6710"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6712"
+         x="86.57872"
+         y="-42.057072"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica">According to wealth</tspan></text>
+    <circle
+       r="24.082726"
+       cy="-139.11369"
+       cx="121.49738"
+       id="circle6724"
+       style="opacity:1;fill:#848484;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="8.6676245"
+       cy="-79.586143"
+       cx="156.63129"
+       id="circle6726"
+       style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="4.3671379"
+       cy="-110.17669"
+       cx="212.56137"
+       id="circle6728"
+       style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="286.72159"
+       y="-180.56119"
+       id="text6762"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6764"
+         x="286.72159"
+         y="-180.56119"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'">Capital Share</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6790"
+       y="-180.56119"
+       x="482.72159"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold'"
+         y="-180.56119"
+         x="482.72159"
+         id="tspan6792"
+         sodipodi:role="line">Redistribution</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.69521141px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 467.28975,-75.009306 c 0,-1.662805 0,-110.992264 0,-110.992264"
+       id="path6794"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text6796"
+       y="-42.057072"
+       x="557.99396"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         y="-42.057072"
+         x="557.99396"
+         sodipodi:role="line"
+         id="tspan6841">According to population</tspan></text>
+    <circle
+       style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle6815"
+       cx="236.82812"
+       cy="-152.20819"
+       r="11.974711"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="opacity:1;fill:#ffd429;fill-opacity:0.80000001;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle6819"
+       cx="317.49738"
+       cy="-139.11369"
+       r="24.082726"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle6821"
+       cx="354.28482"
+       cy="-79.586143"
+       r="10.321168"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle6823"
+       cx="406.90784"
+       cy="-108.52315"
+       r="6.0206814"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="11.974711"
+       cy="-152.20819"
+       cx="432.82812"
+       id="circle6825"
+       style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="24.082726"
+       cy="-139.11369"
+       cx="517.49738"
+       id="circle6829"
+       style="opacity:1;fill:#b3b3b3;fill-opacity:0.8;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="10.321168"
+       cy="-79.586143"
+       cx="554.28479"
+       id="circle6831"
+       style="opacity:1;fill:#848484;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       r="6.0206814"
+       cy="-108.52315"
+       cx="606.90784"
+       id="circle6833"
+       style="opacity:1;fill:#848484;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="opacity:1;fill:#848484;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="circle6835"
+       cx="632.82812"
+       cy="-152.20819"
+       r="11.974711"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ffd429;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.80000001"
+       d="m 147.16535,-89.409449 -9.92126,-15.708661 -6.61417,3.30709 3.30709,-14.88189 16.53543,4.13385 -7.44094,4.13386 9.92126,14.881893 z"
+       id="path6845"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ffd429;fill-opacity:0.8;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 199.3248,-111.88125 -42.75213,-8.8932 -3.02898,3.60736 -7.57905,-7.1184 16.09763,-4.03586 -3.12342,4.22436 42.1838,8.56104 z"
+       id="path6849"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6853"
+       d="m 219.59674,-142.57876 -60.57002,9.41014 -0.96905,5.3311 -10.46999,-11.08092 12.69249,-11.37585 -0.74785,6.47922 59.88536,-9.8736 z"
+       style="fill:#ffd429;fill-opacity:0.8;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:connector-curvature="0"
+       id="path6855"
+       d="m 267.28975,-75.009306 c 0,-1.662805 0,-110.992264 0,-110.992264"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.69521141px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text6857"
+       y="-42.057072"
+       x="300.57874"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;font-family:Helvetica;-inkscape-font-specification:Helvetica"
+         y="-42.057072"
+         x="300.57874"
+         id="tspan6859"
+         sodipodi:role="line">within territories</tspan></text>
+    <path
+       style="fill:#ffdd53;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 340.62992,-119.17323 c 0,0 16.53543,12.40158 20.66929,2.48032 4.13386,-9.92126 -8.26771,-16.53544 -8.26771,-16.53544 l -4.13386,4.96063 -4.13386,-9.92126 14.05512,-4.96063 -2.48032,4.96063 c 0,0 14.7664,8.25855 10.74803,22.32284 -4.96063,17.362203 -29.76378,4.13386 -29.76378,4.13386 z"
+       id="path6861"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscccccscc"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6863"
+       d="m 529.63983,-113.63058 10.13084,15.574323 -5.76682,4.629016 14.9033,3.209191 3.14842,-16.75102 -6.8633,5.03503 -9.3796,-15.22909 z"
+       style="fill:#ffd429;fill-opacity:0.8;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       sodipodi:nodetypes="cccccccc"
+       inkscape:connector-curvature="0"
+       id="path6865"
+       d="m 546.33997,-129.95075 42.09704,11.60486 3.25313,-3.4066 7.10906,7.58781 -16.32248,2.99976 3.38678,-4.0163 -41.55108,-11.23709 z"
+       style="fill:#ffd429;fill-opacity:0.8;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       sodipodi:nodetypes="cccccccc"
+       style="fill:#ffd429;fill-opacity:0.8;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 544.76728,-149.01354 60.96466,-6.37088 1.23431,-5.27599 9.90303,11.59039 -13.24522,10.72721 1.07076,-6.43373 -60.30402,6.86798 z"
+       id="path6867"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_redistribution.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect6869"
+       width="593.07349"
+       height="187.97223"
+       x="84.922775"
+       y="953.93054" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="382.11871"
+       y="984.63873"
+       id="text6871"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan6873"
+         x="382.11871"
+         y="984.63873"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';text-align:center;text-anchor:middle">Regions have different urban transitions</tspan></text>
+    <text
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       sodipodi:linespacing="100%"
+       id="text6875"
+       y="1128.6868"
+       x="381.72046"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan6877"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+         y="1128.6868"
+         x="381.72046"
+         sodipodi:role="line">So rural migration potentials and growth rates are uneven in regions</tspan></text>
+    <path
+       style="fill:#b3b3b3;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 154.17913,1031.6929 28.11023,-20.6693 31.41733,11.5748 -19.01575,39.6851 -38.85827,-4.9607 z"
+       id="path6911"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#e6e6e6;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 207.91929,1035 8.26771,7.4409 42.16536,2.4804 28.937,-23.9764 -37.20472,-16.5355 -37.20472,1.6536 -10.74804,10.748 11.57481,5.7874 z"
+       id="path6915"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#808080;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 155.0059,1057.3228 -10.74803,19.0158 32.24409,23.9764 29.76378,-13.2284 -13.22834,-26.4567 z"
+       id="path6919"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#333333;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 193.86417,1060.2835 11.5748,24.8031 51.25984,-5.7874 12.40158,-35.5512 -50.43307,-1.6535 -11.57481,-8.2677 z"
+       id="path6913"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 266.62007,1010.1969 25.62992,-14.05517 17.36221,32.24407 -14.88189,28.937 -42.16535,10e-5 L 248.4311,1035 Z"
+       id="path6946"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6948"
+       d="m 437.85827,1031.6929 28.11023,-20.6693 31.41733,11.5748 -19.01575,39.6851 -38.85827,-4.9607 z"
+       style="fill:#ffea95;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6950"
+       d="m 491.59843,1035 8.26771,7.4409 42.16536,2.4804 28.937,-23.9764 -37.20472,-16.5355 -37.20472,1.6536 -10.74804,10.748 11.57481,5.7874 z"
+       style="fill:#ffdd54;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6952"
+       d="m 438.68504,1057.3228 -10.74803,19.0158 32.24409,23.9764 29.76378,-13.2284 -13.22834,-26.4567 z"
+       style="fill:#fff6d1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       id="g7058"
+       transform="translate(16,2)"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="585.66559"
+         y="1102.0637"
+         id="text6956"
+         sodipodi:linespacing="100%"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_resource.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           x="588.26569"
+           y="1102.0637"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+           id="tspan6958">-                + </tspan></text>
+      <text
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_resource.png"
+         sodipodi:linespacing="100%"
+         id="text6960"
+         y="1074.7803"
+         x="536.08246"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan6962"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:start;text-anchor:start"
+           y="1074.7803"
+           x="536.08246"
+           sodipodi:role="line">% growth<tspan
+   id="tspan7014"
+   style="font-size:11.25px;text-align:start;text-anchor:start"></tspan></tspan><tspan
+           id="tspan7016"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:start;text-anchor:start"
+           y="1087.7551"
+           x="536.08246"
+           sodipodi:role="line"><tspan
+             id="tspan7018"
+             style="font-size:11.25px;text-align:start;text-anchor:start">from rural migration</tspan></tspan></text>
+      <rect
+         style="opacity:1;fill:url(#linearGradient7004);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect6964"
+         width="69.448822"
+         height="7.4409447"
+         x="-618.77905"
+         y="1094.2823"
+         transform="scale(-1,1)" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path6966"
+       d="m 477.54331,1060.2835 11.5748,24.8031 51.25984,-5.7874 12.40158,-35.5512 -50.43307,-1.6535 -11.57481,-8.2677 z"
+       style="fill:#fffdf6;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path6968"
+       d="m 550.29921,1010.1969 25.62992,-14.05517 17.36221,32.24407 -14.88189,28.937 -42.16535,10e-5 L 532.11024,1035 Z"
+       style="fill:#ffea95;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       id="g7073"
+       transform="translate(11.574803,0.82677165)"
+       inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_transition.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="291.11972"
+         y="1076.0087"
+         id="text6925"
+         sodipodi:linespacing="100%"
+         inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_resource.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           sodipodi:role="line"
+           x="291.11972"
+           y="1076.0087"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+           id="tspan6927">% urban</tspan></text>
+      <g
+         id="g7068">
+        <rect
+           style="opacity:1;fill:url(#linearGradient6937);fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect6929"
+           width="69.448822"
+           height="7.4409447"
+           x="-338.40698"
+           y="1081.1091"
+           transform="scale(-1,1)" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:100%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="306.21677"
+           y="1088.8353"
+           id="text7054"
+           sodipodi:linespacing="100%"
+           inkscape:export-filename="/Users/clementinecottineau/Documents/VARIUS/www/mech_resource.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300"><tspan
+             sodipodi:role="line"
+             x="308.81686"
+             y="1088.8353"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.75px;line-height:100%;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;text-anchor:middle"
+             id="tspan7056">-                + </tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
