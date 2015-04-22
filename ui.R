@@ -85,27 +85,44 @@ shinyUI(fluidPage(
                h3("The Cornerstone model"),
                column(12, img(src = "mech_0.png",class="img-responsive")),
                tags$p(class="text-justify",
-                      'blablabla'),
+'The generic mechanisms included in the cornerstone model consist in scaling functions relating
+city population to city wealth, supply and demand, as well as a gravity model of
+interurban interactions. Cities are supposed to generate largest economic output per capita
+as they grow in size, and to interact more intensely with other cities when they are
+close and larger.'),
                h3("Bonified Interurban Exchanges"),
                column(12, img(src = "mech_bonus.png",class="img-responsive")),
                tags$p(class="text-justify",
-                      'blablabla'),
+                      'To account for spillover effects in interurban exchanges,
+                      we model a bonus for exchanges for cities interacting with many
+                      partners and large flows.'),
                h3("Costly Interactions"),
                column(12, img(src = "mech_cost.png",class="img-responsive")),
                tags$p(class="text-justify",
-                      'blablabla'),
+                      'Transaction and entry costs are supposed to reduce the pool of 
+                      potential partners to those with which cities can expect
+                      profitable transactions. This mechanism aims at eliminating
+                      interactions between very distant and very small cities.'),
                h3("Environmental resources"),
                column(12, img(src = "mech_resource.png",class="img-responsive")),
                tags$p(class="text-justify",
-                      'blablabla'),
+                      'Because of their location in an anysotropic environment,
+                      cities benefit from uneven opportunities of local resource extraction 
+                      (for example : coal mining or oil extraction). The meaning of resource
+                       here can also include negative resources affecting cities located on them.'),
                h3("Redistributive regions"),
                column(12, img(src = "mech_redistribution.png",class="img-responsive")),
                tags$p(class="text-justify",
-                      'blablabla'),
+                      'Regions as political and administrative territories can involve redistribution 
+                      of wealth among cities. This mechanism consists in a mutualisation of wealth 
+                      at the level of the region, a possible capture of some of this resource by the capital city,
+                      and the redistribution of the rest to every city according to its needs, measured by the total population.'),
                h3("Time-lags in regional transitions"),
                column(12, img(src = "mech_transition.png",class="img-responsive")),
                tags$p(class="text-justify",
-                      'blablabla'))
+                      'As the different parts of the territory differ in their position 
+                      in the urban transition, this mechanism takes the time lag of regions
+                       in the differences of potential rural migration to cities.'))
              ),
     tabPanel("Model Structures Analysis",
              h3("Contribution of mechanisms to the quality of simulation (closeness to data)"),
