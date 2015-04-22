@@ -81,7 +81,11 @@ shinyUI(fluidPage(
     tabPanel("Selected mechanisms",
              fluidRow(
                tags$p(class="text-justify",
-                      'blablabla'),
+                      'MARIUS is built as a modular family of models. Each model contain the 
+                      cornerstone assumptions about city growth (the cornerstone model), as 
+                      well as a combination of supplementary mechanisms corresponding to 
+                      different hypotheses regarding the explanation of the diversity of urban
+                       trajectory in the modelled system of cities.'),
                h3("The Cornerstone model"),
                column(12, img(src = "mech_0.png",class="img-responsive")),
                tags$p(class="text-justify",
