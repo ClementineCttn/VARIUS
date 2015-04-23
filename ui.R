@@ -49,6 +49,7 @@ shinyUI(fluidPage(
                 ),
               plotOutput("map1"),
               h3("Inter-census urban growth"),
+              "Urban growth corresponds to the average annual growth rate between the two selected dates.",
               fluidRow(
                 column(6,
                 selectInput("Census_year1", label = "First Census year",
@@ -81,29 +82,29 @@ shinyUI(fluidPage(
     tabPanel("Selected mechanisms",
 
                tags$p(class="text-justify",
-                      'MARIUS is built as a modular family of models. Each model contain the 
+                      'MARIUS is built as a modular family of models. Each model contains the 
                       cornerstone assumptions about city growth (the cornerstone model), as 
                       well as a combination of supplementary mechanisms corresponding to 
                       different hypotheses regarding the explanation of the diversity of urban
-                       trajectory in the modelled system of cities.'),
+                       trajectories in the modelled system of cities.'),
                h3("The Cornerstone model"),
                column(12, img(src = "mech_0.png",class="img-responsive")),
                tags$p(class="text-justify",
-'The generic mechanisms included in the cornerstone model consist in scaling functions relating
-city population to city wealth, supply and demand, as well as a gravity model of
-interurban interactions. Cities are supposed to generate largest economic output per capita
-as they grow in size, and to interact more intensely with other cities when they are
-close and larger.'),
+'Generic mechanisms included in the cornerstone model consist in scaling laws relating
+city population and city wealth, supply and demand, as well as a gravity model of
+interurban interactions. Cities are supposed to generate larger economic output per capita
+as they grow in size, and to interact more intensely with the cities that are larger
+and closer to them.'),
                h3("Bonified Interurban Exchanges"),
                column(12, img(src = "mech_bonus.png",class="img-responsive")),
                tags$p(class="text-justify",
                       'To account for spillover effects in interurban exchanges,
-                      we model a bonus for exchanges for cities interacting with many
+                      we model an interaction bonus for cities exchanging with many
                       partners and large flows.'),
                h3("Costly Interactions"),
                column(12, img(src = "mech_cost.png",class="img-responsive")),
                tags$p(class="text-justify",
-                      'Transaction and entry costs are supposed to reduce the pool of 
+                      'Transaction costs and entry costs are supposed to reduce the pool of 
                       potential partners to those with which cities can expect
                       profitable transactions. This mechanism aims at eliminating
                       interactions between very distant and very small cities.'),
@@ -113,38 +114,41 @@ close and larger.'),
                       'Because of their location in an anysotropic environment,
                       cities benefit from uneven opportunities of local resource extraction 
                       (for example : coal mining or oil extraction). The meaning of resource
-                       here can also include negative resources affecting cities located on them.'),
+                       here can also include negative resources affecting city growth 
+                      (polluted sites, etc.).'),
                h3("Redistributive regions"),
                column(12, img(src = "mech_redistribution.png",class="img-responsive")),
                tags$p(class="text-justify",
                       'Regions as political and administrative territories can involve redistribution 
                       of wealth among cities. This mechanism consists in a mutualisation of wealth 
-                      at the level of the region, a possible capture of some of this resource by the capital city,
-                      and the redistribution of the rest to every city according to its needs, measured by the total population.'),
+                      at the regional and national levels, a possible capture of some of this resource by the capital city,
+                      and the redistribution of the rest to every city according to its needs, measured by total population.'),
                h3("Time-lags in regional transitions"),
                column(12, img(src = "mech_transition.png",class="img-responsive")),
                tags$p(class="text-justify",
                       'As the different parts of the territory differ in their position 
                       in the urban transition, this mechanism takes into account the time lag of regions
-                       in the differences of potential rural migration to cities.'))
+                       in terms of potential rural migration to cities.'))
              ,
     tabPanel("Model Structures Analysis",
              h3("Contribution of mechanisms to the quality of simulation (closeness to data)"),
              fluidRow(
                column(6,
-                      sliderInput("pvalue", label = "Statistical Significance (p-value, %)",
+                      sliderInput("pvalue", label = "Statistical Significance (% of error)",
                            min = 0, max = 10, value = 1, step = 0.1))
              ),
-             tags$p(class="text-justify", HTML('Models with different combinaison of mechanisms have been calibrated
-              intensively against empirical data, using generic algorithms for as many
-              generation as is defined by the slider "number of generations". 
-              This plot shows the result of a regression of their closeness to data.
-              Each bar represents the value of the estimated
-              <span class="mark" title="Significance is given with a probability of error of the chosen percentage">
-              coefficient</span> for each activated mechanism, in comparison with the
+             tags$p(class="text-justify", HTML('Models with different combination of mechanisms have been calibrated
+              intensively against empirical data, using generic algorithms for more than 100000 generations. 
+              This plot shows the results of a regression explaining one measure of the quality of 
+models (a small difference between simulated and empirical urban trajectories) by their mechanisms composition 
+(the fact that any of the supplementary mechanisms is activated or not"
+              Each bar represents the value of the estimated 
+              coefficient for each activated mechanism, in comparison with the
               same model structure without this mechanism, everything else being equal.')),
              plotOutput("graph1"),
              h3("Contribution of mechanisms' interactions to the quality of simulation (closeness to data)"),
+             "This graph allows to explore the interaction of two mechanisms in reducing the distance
+              between empirical and simulated trajectories of cities in the Former Soviet Union.",
              fluidRow(
                column(6,
                       selectInput("mechanismInteractions", 
@@ -159,7 +163,7 @@ close and larger.'),
                                                         "Redistribution", "Urban Transition"),
                                          selected = c("Fixed Costs")))
              ),
-             plotOutput("graphinteraction")
+              plotOutput("graphinteraction")
     ),
     
     tabPanel("Choose Mechanisms' combination", 
@@ -167,7 +171,7 @@ close and larger.'),
              fluidRow(
                column(6,
                       sliderInput("ntrait", label = "Number of mechanisms",
-                           min = 0, max = 5, value = 4, step = 1)),
+                           min = 0, max = 5, value = 1, step = 1)),
                column(6,
                       selectInput("period", label = "Period",
                            choices = c("1959-1989", "1989-2010"), selected = "1959-1989"))
