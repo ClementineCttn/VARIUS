@@ -745,7 +745,15 @@ output$modelcombi3 <- renderPrint({
  })
  
  output$table_pos_res <- renderDataTable({
-
+   if (input$period2  == "1959-1989") run <-  modelRuns$period1
+   if (input$period2  == "1989-2010") run <-  modelRuns$period2
+   
+   if (run == "FALSE")  {
+     marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
+   }
+   if (run == "TRUE")  {
+     marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
+   }
    if (input$period2  == "1959-1989") {
      observed <- input$year_sima
      mariusstep0 <- subset(marius, step == 0)
@@ -791,6 +799,15 @@ output$modelcombi3 <- renderPrint({
  
  output$table_neg_res <- renderDataTable({
 
+   if (input$period2  == "1959-1989") run <-  modelRuns$period1
+   if (input$period2  == "1989-2010") run <-  modelRuns$period2
+   
+   if (run == "FALSE")  {
+     marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
+   }
+   if (run == "TRUE")  {
+     marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
+   }
    
    if (input$period2  == "1959-1989") {
      observed <- input$year_sima

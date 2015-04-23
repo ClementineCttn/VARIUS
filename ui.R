@@ -79,7 +79,7 @@ shinyUI(fluidPage(
     
     "How to simulate it ?",
     tabPanel("Selected mechanisms",
-             fluidRow(
+
                tags$p(class="text-justify",
                       'MARIUS is built as a modular family of models. Each model contain the 
                       cornerstone assumptions about city growth (the cornerstone model), as 
@@ -125,9 +125,9 @@ close and larger.'),
                column(12, img(src = "mech_transition.png",class="img-responsive")),
                tags$p(class="text-justify",
                       'As the different parts of the territory differ in their position 
-                      in the urban transition, this mechanism takes the time lag of regions
+                      in the urban transition, this mechanism takes into account the time lag of regions
                        in the differences of potential rural migration to cities.'))
-             ),
+             ,
     tabPanel("Model Structures Analysis",
              h3("Contribution of mechanisms to the quality of simulation (closeness to data)"),
              fluidRow(
