@@ -647,7 +647,7 @@ output$modelcombi3 <- renderPrint({
    p <-ggplot(zipf, aes(x=ranks, y=size, group=date, fill=date, colour=date)) 
    p + scale_y_log10(breaks=c(10, 100, 1000, 10000)) +
      scale_x_log10(breaks=c(1, 10, 100, 1000)) + 
-     xlab("Ranks") + ylab("Population (x1000)") +
+     xlab("Rank") + ylab("Population (x1000)") +
      geom_point() + geom_line() +
      scale_colour_manual(values=cols) +
    theme(axis.text=element_text(size=12) ,

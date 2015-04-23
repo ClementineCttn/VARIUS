@@ -168,6 +168,10 @@ models (a small difference between simulated and empirical urban trajectories) b
     
     tabPanel("Choose Mechanisms' combination", 
              h3("Optimal model after multi-calibration"),
+             tags$p("Given the calibration of all model structures against the same data and
+                     evaluation criteria, these tables describe the best calibrated model 
+                    for a given period and a selected level of parsimony (the number of mechanisms 
+                    included in the model structure)."),
              fluidRow(
                column(6,
                       sliderInput("ntrait", label = "Number of mechanisms",
@@ -177,17 +181,23 @@ models (a small difference between simulated and empirical urban trajectories) b
                            choices = c("1959-1989", "1989-2010"), selected = "1959-1989"))
                
              ),
-             tags$p("This gives a profile of the best performing model,
-                    given the number of mechanisms actived at the chosen period."),
-             h3("Evaluation Criteria:"),
-             dataTableOutput("print1"),
-             h3("Mechanisms' combination:"),
+              h3("Mechanisms' combination:"),
+             "This is the best set of mechanisms for the given period to minimize the distance 
+             between simulated and observed urban trajectories in the Former Soviet Union.",
              dataTableOutput("print1bis"),
              h3("Parameter values:"),
-             dataTableOutput("print1ter")
+             "Given the structure of the model, these are the values of parameter that perform best 
+             to reproduce the empirical urban evolution.",             
+             dataTableOutput("print1ter"),
+             h3("Evaluation Criteria:"),
+             "These are the three measures used to evaluate the quality of the model (to be minimized).",
+             dataTableOutput("print1")
+             
     ),
     "Simulate it",
     tabPanel("Run a MARIUS model",
+             "To execute a model, either select one of the best calibrated models for a given period of time and 
+             mechanisms combination, or customize the parameter values yourself [model to run | customised model].",
              wellPanel(
              h3("Model structures and parameterization"),
              fluidRow(
@@ -316,7 +326,7 @@ models (a small difference between simulated and empirical urban trajectories) b
                     "This rank-size representation is common to study the hierarchical
                     structure of systems of cities and their evolution towards equalisation
                     or differenciation of city sizes. Blue dots indicate simulated cities
-                    over time, in comparison with empirical observations (in grey)"),
+                    over time, in comparison with empirical observations (in grey)."),
              plotOutput("graph2"),
              verbatimTextOutput("modelcombi")
     ),
@@ -325,8 +335,8 @@ models (a small difference between simulated and empirical urban trajectories) b
              tags$p(class="text-justify",
                     "Residuals represent the difference between observed and simulated population for each city (in logs).
              Positive residuals mean that cities grew faster in reality than what we were able to simulate, 
-             wheareas negative residuals indicate that we overestimated the growth of such cities.
-             Residuals help trigger how to improve the model."),
+             whereas negative residuals indicate that we over-estimated the growth of such cities.
+             Residuals help trigger how and where model needs to be improved."),
              fluidRow(
                column(6,
                       sliderInput("cutoff", label = "Residual absolute cut-off",
@@ -359,10 +369,12 @@ models (a small difference between simulated and empirical urban trajectories) b
     tabPanel("Profiles of Residual cities",
              h3("Profiles of Residual cities"),
              tags$p(class="text-justify",HTML('Profiles of residual cities are obtained after a regression
-                  on the value of residual. We plot the
+                  on the value of residual population. We plot the
                   <span title="Significance is given with a probability of error of 1%."
                   class="mark">coefficient values</span>
-                  of some available urban attributes (status of capital, resources, location and past growth)')),
+                  of some available urban attributes (status of capital, resources, location and past growth). 
+                  This regression helps profiling the type of cities most over- and under-estimated by the model, that 
+                                              is the topical areas where the model needs to be improved.')),
              fluidRow(
                conditionalPanel(condition = "input.period2 == '1959-1989'",
                      column(6,
