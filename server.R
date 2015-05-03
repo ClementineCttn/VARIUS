@@ -23,7 +23,6 @@ colnames(name_col) <- c("name", "NumCol")
 selectParamToRun <- function(calibration, n_trait){
   x <- calibration
   x <- subset(x, overflow == 0)
-  # x <- subset(x,fr.geocites.marius.From1959To1989 == "true")
   x <- subset(x,nTrait == n_trait)
   sortedX <- x[order(x$distribution) , ]
   return(sortedX[1,])
@@ -47,7 +46,8 @@ plotAttribute <- function(attribute, Attcolor, Attnames) {
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-  modelRuns <- reactiveValues(period1 = FALSE, periode2 = FALSE)
+  modelRuns <- reactiveValues(period1 = FALSE, period2 = FALSE)
+  mariuscsv <- reactiveValues(mariusperiod1 = "data/default-marius1959-1989.csv", mariusperiod2 = "data/default-marius1989-2010.csv")
   
   output$map1 <- renderPlot({ 
     Year <- subset(name_col, name == input$Census_year)
@@ -425,8 +425,8 @@ output$print1bis <- renderDataTable({
  
  output$cppst <-renderPrint ({
    input$go
-   if (input$period2  == "1959-1989") time <- "fr.geocites.marius.From1959To1989"
-   if (input$period2  == "1989-2010") time <- "fr.geocites.marius.From1989To2010"
+   if (input$runingperiod  == "1959-1989") time <- "fr.geocites.marius.From1959To1989"
+   if (input$runingperiod  == "1989-2010") time <- "fr.geocites.marius.From1989To2010"
    listmec <- input$mechanisms    
    
    
@@ -436,8 +436,8 @@ output$print1bis <- renderDataTable({
           current_generation <- "400000"
            calibration <- read.csv(paste("data/population", current_generation, ".csv", sep=""), dec=".", sep=",")
      
-           if (input$period2  == "1959-1989") calibration <- subset(calibration, fr.geocites.marius.From1959To1989 == "true") 
-            if (input$period2  == "1989-2010") calibration <- subset(calibration, fr.geocites.marius.From1989To2010 == "true") 
+           if (input$runingperiod  == "1959-1989") calibration <- subset(calibration, fr.geocites.marius.From1959To1989 == "true") 
+            if (input$runingperiod  == "1989-2010") calibration <- subset(calibration, fr.geocites.marius.From1989To2010 == "true") 
     
               x <- calibration
               x <- subset(x, overflow == 0)
@@ -503,7 +503,12 @@ output$print1bis <- renderDataTable({
       modelRuns$period2 <- TRUE
           }
 
-      download.file(copypaste, destfile = paste("data/marius", input$period2, ".csv", sep=""), method = "curl")
+      download.file(copypaste, destfile = paste("data/marius", input$runingperiod, ".csv", sep=""), method = "curl")
+   
+   
+   if (input$runingperiod  == "1959-1989") mariuscsv$mariusperiod1 <- paste("data/marius", input$runingperiod, ".csv", sep="")
+   if (input$runingperiod  == "1989-2010") mariuscsv$mariusperiod2 <- paste("data/marius", input$runingperiod, ".csv", sep="")   
+  
    "Done!"
    
    }
@@ -512,8 +517,8 @@ output$print1bis <- renderDataTable({
  
 
 output$modelcombi <- renderPrint({
-  if (input$period2  == "1959-1989") time <- " From 1959 To 1989"
-  if (input$period2  == "1989-2010") time <- " From 1989 To 2010"
+  if (input$runingperiod  == "1959-1989") time <- " From 1959 To 1989"
+  if (input$runingperiod  == "1989-2010") time <- " From 1989 To 2010"
   listmec <- input$mechanisms    
   mod <- "Generic Model"
   if (any(listmec == "Bonus")) mod <- paste(mod, " + Bonus", sep="")
@@ -525,8 +530,8 @@ output$modelcombi <- renderPrint({
 })
 
 output$modelcombi2 <- renderPrint({
-  if (input$period2  == "1959-1989") time <- " From 1959 To 1989"
-  if (input$period2  == "1989-2010") time <- " From 1989 To 2010"
+  if (input$runingperiod  == "1959-1989") time <- " From 1959 To 1989"
+  if (input$runingperiod  == "1989-2010") time <- " From 1989 To 2010"
   listmec <- input$mechanisms    
   mod <- "Generic Model"
   if (any(listmec == "Bonus")) mod <- paste(mod, " + Bonus", sep="")
@@ -538,8 +543,8 @@ output$modelcombi2 <- renderPrint({
 })
 
 output$modelcombi3 <- renderPrint({
-  if (input$period2  == "1959-1989") time <- " From 1959 To 1989"
-  if (input$period2  == "1989-2010") time <- " From 1989 To 2010"
+  if (input$runingperiod  == "1959-1989") time <- " From 1959 To 1989"
+  if (input$runingperiod  == "1989-2010") time <- " From 1989 To 2010"
   listmec <- input$mechanisms    
   mod <- "Generic Model"
   if (any(listmec == "Bonus")) mod <- paste(mod, " + Bonus", sep="")
@@ -552,18 +557,13 @@ output$modelcombi3 <- renderPrint({
 
  output$graph2 <- renderPlot({
    
-   beginyear <- substr(input$period2, 1, 4)
-   if (input$period2  == "1959-1989") run <-  modelRuns$period1
-   if (input$period2  == "1989-2010") run <-  modelRuns$period2
+   beginyear <- substr(input$runingperiod, 1, 4)
+   if (input$runingperiod  == "1959-1989") mariusfile <- mariuscsv$mariusperiod1 
+   if (input$runingperiod  == "1989-2010") mariusfile <- mariuscsv$mariusperiod2
    
-   if (run == "FALSE") {
-   marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-   }
-   if (run == "TRUE") {
-    marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-   }
+   marius <- read.csv(mariusfile,sep=",",dec=".")
    
-   if (input$period2  == "1959-1989") {
+   if (input$runingperiod  == "1959-1989") {
    mariusstep0 <- subset(marius, step == 0)
    mariusstep11 <- subset(marius, step == 11)
    mariusstep20 <- subset(marius, step == 20)
@@ -607,7 +607,7 @@ output$modelcombi3 <- renderPrint({
    cols <- c( "sim1989" = "dodgerblue","1989" = "gray70","sim1979" = "dodgerblue3", "1979"= "gray60", "sim1970" = "dodgerblue4", "1970"= "gray50", "1959" = "gray30") 
  }
    
-   if (input$period2  == "1989-2010") {
+   if (input$runingperiod  == "1989-2010") {
      
      mariusstep0 <- subset(marius, step == 0)
      mariusstep13 <- subset(marius, step == 13)
@@ -664,17 +664,12 @@ output$modelcombi3 <- renderPrint({
 
    cutoff <- input$cutoff
    
-   if (input$period2  == "1959-1989") run <-  modelRuns$period1
-   if (input$period2  == "1989-2010") run <-  modelRuns$period2
+   if (input$runingperiod  == "1959-1989") mariusfile <- mariuscsv$mariusperiod1 
+   if (input$runingperiod  == "1989-2010") mariusfile <- mariuscsv$mariusperiod2
    
-   if (run == "FALSE")  {
-     marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-   }
-   if (run == "TRUE")  {
-     marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-   }
+   marius <- read.csv(mariusfile,sep=",",dec=".")
    
-   if (input$period2  == "1959-1989") {
+   if (input$runingperiod  == "1959-1989") {
      observed <- input$year_sima
      mariusstep0 <- subset(marius, step == 0)
      mariusstep11 <- subset(marius, step == 11)
@@ -689,7 +684,7 @@ output$modelcombi3 <- renderPrint({
  
    }
   
-  if (input$period2  == "1989-2010") {
+  if (input$runingperiod  == "1989-2010") {
     observed <- input$year_simb
     mariusstep0 <- subset(marius, step == 0)
     mariusstep13 <- subset(marius, step == 13)
@@ -745,16 +740,12 @@ output$modelcombi3 <- renderPrint({
  })
  
  output$table_pos_res <- renderDataTable({
-   if (input$period2  == "1959-1989") run <-  modelRuns$period1
-   if (input$period2  == "1989-2010") run <-  modelRuns$period2
+   if (input$runingperiod  == "1959-1989") mariusfile <- mariuscsv$mariusperiod1 
+   if (input$runingperiod  == "1989-2010") mariusfile <- mariuscsv$mariusperiod2
    
-   if (run == "FALSE")  {
-     marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-   }
-   if (run == "TRUE")  {
-     marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-   }
-   if (input$period2  == "1959-1989") {
+   marius <- read.csv(mariusfile,sep=",",dec=".")
+   
+   if (input$runingperiod  == "1959-1989") {
      observed <- input$year_sima
      mariusstep0 <- subset(marius, step == 0)
      mariusstep11 <- subset(marius, step == 11)
@@ -768,7 +759,7 @@ output$modelcombi3 <- renderPrint({
      
 }
    
-   if (input$period2  == "1989-2010") {
+   if (input$runingperiod  == "1989-2010") {
      observed <- input$year_simb
      mariusstep0 <- subset(marius, step == 0)
      mariusstep13 <- subset(marius, step == 13)
@@ -799,17 +790,12 @@ output$modelcombi3 <- renderPrint({
  
  output$table_neg_res <- renderDataTable({
 
-   if (input$period2  == "1959-1989") run <-  modelRuns$period1
-   if (input$period2  == "1989-2010") run <-  modelRuns$period2
+   if (input$runingperiod  == "1959-1989") mariusfile <- mariuscsv$mariusperiod1 
+   if (input$runingperiod  == "1989-2010") mariusfile <- mariuscsv$mariusperiod2
    
-   if (run == "FALSE")  {
-     marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-   }
-   if (run == "TRUE")  {
-     marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-   }
+   marius <- read.csv(mariusfile,sep=",",dec=".")
    
-   if (input$period2  == "1959-1989") {
+   if (input$runingperiod  == "1959-1989") {
      observed <- input$year_sima
      mariusstep0 <- subset(marius, step == 0)
      mariusstep11 <- subset(marius, step == 11)
@@ -822,7 +808,7 @@ output$modelcombi3 <- renderPrint({
      if (observed == "Pop1959") table <- mariusstep0
 }
    
-   if (input$period2  == "1989-2010") {
+   if (input$runingperiod  == "1989-2010") {
      observed <- input$year_simb
      mariusstep0 <- subset(marius, step == 0)
      mariusstep13 <- subset(marius, step == 13)
@@ -852,18 +838,13 @@ output$modelcombi3 <- renderPrint({
    
  output$graph3 <- renderPlot({
 
-   if (input$period2  == "1959-1989") run <-  modelRuns$period1
-   if (input$period2  == "1989-2010") run <-  modelRuns$period2
+   if (input$runingperiod  == "1959-1989") mariusfile <- mariuscsv$mariusperiod1 
+   if (input$runingperiod  == "1989-2010") mariusfile <- mariuscsv$mariusperiod2
    
-   if (run == "FALSE")  {
-     marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-   }
-   if (run == "TRUE")  {
-     marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-   }
+   marius <- read.csv(mariusfile,sep=",",dec=".")
    
    
-   if (input$period2  == "1959-1989") {
+   if (input$runingperiod  == "1959-1989") {
      observed <- input$year_sim2a
      mariusstep0 <- subset(marius, step == 0)
      mariusstep11 <- subset(marius, step == 11)
@@ -876,7 +857,7 @@ output$modelcombi3 <- renderPrint({
      if (observed == "Pop1959") table <- mariusstep0
   }
    
-   if (input$period2  == "1989-2010") {
+   if (input$runingperiod  == "1989-2010") {
      observed <- input$year_sim2b
      mariusstep0 <- subset(marius, step == 0)
      mariusstep13 <- subset(marius, step == 13)
@@ -939,18 +920,13 @@ output$graph3interaction <- renderPlot({
   
   if (selectedAtt != interactingAtt) {
     
-    if (input$period2  == "1959-1989") run <-  modelRuns$period1
-    if (input$period2  == "1989-2010") run <-  modelRuns$period2
+    if (input$runingperiod  == "1959-1989") mariusfile <- mariuscsv$mariusperiod1 
+    if (input$runingperiod  == "1989-2010") mariusfile <- mariuscsv$mariusperiod2
     
-    if (run == "FALSE") {
-      marius <- read.csv(paste("data/default-marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-    }
-    if (run == "TRUE")  {
-      marius <- read.csv(paste("data/marius", input$period2, ".csv", sep=""),sep=",",dec=".")
-    }
+    marius <- read.csv(mariusfile,sep=",",dec=".")
     
   
-  if (input$period2  == "1959-1989") {
+  if (input$runingperiod  == "1959-1989") {
     observed <- input$year_sim2a
     mariusstep0 <- subset(marius, step == 0)
     mariusstep11 <- subset(marius, step == 11)
@@ -963,7 +939,7 @@ output$graph3interaction <- renderPlot({
     if (observed == "Pop1959") table <- mariusstep0
   }
   
-  if (input$period2  == "1989-2010") {
+  if (input$runingperiod  == "1989-2010") {
     observed <- input$year_sim2b
     mariusstep0 <- subset(marius, step == 0)
     mariusstep13 <- subset(marius, step == 13)

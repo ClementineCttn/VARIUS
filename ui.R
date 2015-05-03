@@ -206,7 +206,7 @@ models (a small difference between simulated and empirical urban trajectories) b
                            choices = c("Best Calibrated Model", "Customised Model"), 
                            selected = "Best Calibrated Model")),
                column(4,
-               selectInput("period2", label = "Period",
+               selectInput("runingperiod", label = "Period",
                            choices = c("1959-1989", "1989-2010"), selected = "1959-1989")),
                column(4,
                       checkboxGroupInput("mechanisms", 
