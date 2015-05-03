@@ -865,7 +865,7 @@ output$modelcombi3 <- renderPrint({
    Agglo@data <- Agglo@data[order(-Agglo@data[,Year]) , ]
    Agglo@data$Residuals <- log(Agglo@data[,Year]) - log(Agglo@data$population) 
    
-   res <- Agglo@data[order(-Agglo@data$Residuals) , ]
+   res <- Agglo@data[order(Agglo@data$Residuals) , ]
    residuals <-  cbind(res$name, res$country, round(res[,Year],0), round(res$population,0))
    colnames(residuals) <- c("City","Republic", "Observed thousands", "Simulated thousands")
   residuals
