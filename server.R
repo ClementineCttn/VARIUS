@@ -46,7 +46,6 @@ plotAttribute <- function(attribute, Attcolor, Attnames) {
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-  modelRuns <- reactiveValues(period1 = FALSE, period2 = FALSE)
   mariuscsv <- reactiveValues(mariusperiod1 = "data/default-marius1959-1989.csv", mariusperiod2 = "data/default-marius1989-2010.csv")
   
   output$map1 <- renderPlot({ 
@@ -471,8 +470,7 @@ output$print1bis <- renderDataTable({
                     sep="")
      
         copypaste <- paste("http://localhost:8081/run/marius1?mechanisms=", mec, time, "&parameters=", param, sep="")
-     modelRuns$period1 <- TRUE
-      }
+       }
    
    
    if (input$choice_run == "Customised Model") {
@@ -500,7 +498,6 @@ output$print1bis <- renderDataTable({
                     sep="")
      
             copypaste <- paste("http://localhost:8081/run/marius1?mechanisms=", mec, time, "&parameters=", param, sep="")
-      modelRuns$period2 <- TRUE
           }
 
       download.file(copypaste, destfile = paste("data/marius", input$runingperiod, ".csv", sep=""), method = "curl")
