@@ -321,17 +321,18 @@ models (a small difference between simulated and empirical urban trajectories) b
             
     "How close are we ?", 
      tabPanel("Macro Analysis",
-             h3("Macro-geographic analysis"),
+             h3("Rank-size distribution"),
              tags$p(class="text-justify",
                     "This rank-size representation is common to study the hierarchical
                     structure of systems of cities and their evolution towards equalisation
                     or differenciation of city sizes. Blue dots indicate simulated cities
                     over time, in comparison with empirical observations (in grey)."),
              plotOutput("graph2"),
+             h3("Dispersion of residuals"),
              tags$p(class="text-justify",
-                    "This graph represents the value of each city's population observed (x axis)
+                    "This graph represents the value of each city's population, observed (x axis)
                     and simulated (y axis) at the last step of the simulation. A perfect model would
-                    exhibit a straight line and a slope equal to 1."),
+                    exhibit a distribution of cities along the orange line."),
              plotOutput("graphObsSim"),
              verbatimTextOutput("modelcombi")
     ),
