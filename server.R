@@ -677,18 +677,19 @@ output$modelcombi3 <- renderPrint({
       SimObs$observed <- SimObs$Pop2010
    }
    
+     
    p <-ggplot(SimObs, aes(x=observed, y=simulated)) 
-   p + scale_y_log10(breaks=c(10, 100, 1000, 10000)) +
+   p + scale_y_log10() +
      scale_x_log10(breaks=c(10, 100, 1000, 10000)) + 
-     xlab("Observed Population") + ylab("Simulated Population") +
-     geom_point() + 
+     xlab("Observed Population (x 1000)") + ylab("Simulated Population (x 1000)") +
+     geom_point(colour = "dodgerblue4")  +
      #geom_line() +
-     scale_colour_manual(values=c("dodgerblue", "black", "white")) +
+  # scale_colour_manual(values=c("", "dodgerblue", "dodgerblue")) +
      theme(axis.text=element_text(size=12) ,
            axis.title=element_text(size=14),
-           axis.text.x = element_text(angle = 45, hjust = 1))
+           axis.text.x = element_text(angle = 45, hjust = 1)) +
    #+    ggtitle(paste("Simulated\n", sep="")) 
-   
+  geom_abline(intercept=0, slope=1,  colour = "coral", size = 1.2)
    
  })
   
