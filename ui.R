@@ -328,6 +328,11 @@ models (a small difference between simulated and empirical urban trajectories) b
                     or differenciation of city sizes. Blue dots indicate simulated cities
                     over time, in comparison with empirical observations (in grey)."),
              plotOutput("graph2"),
+             tags$p(class="text-justify",
+                    "In this graph represent the value of each city's population observed (x axis)
+                    and simulated (y axis) at the last date of the simulation. A perfect model would
+                    exhibit a straight line and a slope equal to 1."),
+             plotOutput("graphObsSim"),
              verbatimTextOutput("modelcombi")
     ),
     tabPanel("Residual trajectories",

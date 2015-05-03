@@ -655,7 +655,44 @@ output$modelcombi3 <- renderPrint({
  })
  
  
- output$map2 <- renderPlot({
+ output$graphObsSim <- renderPlot({
+   if (input$runingperiod  == "1959-1989") mariusfile <- mariuscsv$mariusperiod1 
+   if (input$runingperiod  == "1989-2010") mariusfile <- mariuscsv$mariusperiod2
+   
+   marius <- read.csv(mariusfile,sep=",",dec=".")
+   
+   if (input$runingperiod  == "1959-1989") {
+      mariusstep30 <- subset(marius, step == 30)
+     darius <- subset(Agglo@data, Pop1959 > 0)  
+     SimObs <- data.frame(darius, mariusstep30[match(darius$AROKATO,mariusstep30$arokato), ])
+     SimObs$simulated <- SimObs$population 
+     SimObs$observed <- SimObs$Pop1989 
+   }
+   
+   if (input$runingperiod  == "1989-2010") {
+      mariusstep21 <- subset(marius, step == 21)
+      darius <- subset(Agglo@data, Pop1989 > 0)  
+      SimObs <- data.frame(darius, mariusstep21[match(darius$AROKATO,mariusstep21$arokato), ])
+      SimObs$simulated <- SimObs$population 
+      SimObs$observed <- SimObs$Pop2010
+   }
+   
+   p <-ggplot(SimObs, aes(x=observed, y=simulated)) 
+   p + scale_y_log10(breaks=c(10, 100, 1000, 10000)) +
+     scale_x_log10(breaks=c(10, 100, 1000, 10000)) + 
+     xlab("Observed Population") + ylab("Simulated Population") +
+     geom_point() + 
+     #geom_line() +
+     scale_colour_manual(values=c("dodgerblue", "black", "white")) +
+     theme(axis.text=element_text(size=12) ,
+           axis.title=element_text(size=14),
+           axis.text.x = element_text(angle = 45, hjust = 1))
+   #+    ggtitle(paste("Simulated\n", sep="")) 
+   
+   
+ })
+  
+  output$map2 <- renderPlot({
    par(mar = c(0,0,1,0))
    plot(Shape, col="gray69", border="white", lwd = 1)
 
@@ -1000,6 +1037,7 @@ output$graph3interaction <- renderPlot({
   p <- ggplot(aes(x=UrbanAttribute, fill=Significant), data=data)
   plot1 <- p + geom_bar(aes(y=Residual), stat="identity") +
     scale_fill_manual(values = c("dodgerblue", "gray30")) + 
+    ggtitle("Interaction between attributes") +
     theme(axis.text=element_text(size=12) ,
           axis.title=element_text(size=14),
           axis.text.x = element_text(angle = 45, hjust = 1))
