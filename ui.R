@@ -28,6 +28,7 @@ shinyUI(fluidPage(
              against historical urban data, gathered within DARIUS Database.')
              #img(src = "incremental-modeling-EN.png", height = 500, width = 500)
     ),
+    "-----",
     "What Happened ?",
     tabPanel( "Census Data", 
               h3("Observed distribution of city sizes with DARIUS Database, 1897-2010"),
@@ -77,7 +78,7 @@ shinyUI(fluidPage(
               ),
               plotOutput("map1ter")
     ),
-    
+    "-----",
     "How to simulate it ?",
     tabPanel("Selected mechanisms",
 
@@ -132,21 +133,22 @@ and closer to them.'),
              ,
     tabPanel("Model Structures Analysis",
              h3("Contribution of mechanisms to the quality of simulation (closeness to data)"),
+             tags$p(class="text-justify", HTML('Models with different combination of mechanisms have been calibrated
+              intensively against empirical data, using generic algorithms for more than 100000 generations. 
+              This plot shows the results of a regression explaining one measure of the quality of 
+                                               models (a small difference between simulated and empirical urban trajectories) by their mechanisms composition 
+                                               (the fact that any of the supplementary mechanisms is activated or not"
+                                               Each bar represents the value of the estimated 
+                                               coefficient for each activated mechanism, in comparison with the
+                                               same model structure without this mechanism, everything else being equal.')),
+             
              fluidRow(
                column(6,
                       sliderInput("pvalue", label = "Statistical Significance (% of error)",
                            min = 0, max = 10, value = 1, step = 0.1))
              ),
-             tags$p(class="text-justify", HTML('Models with different combination of mechanisms have been calibrated
-              intensively against empirical data, using generic algorithms for more than 100000 generations. 
-              This plot shows the results of a regression explaining one measure of the quality of 
-models (a small difference between simulated and empirical urban trajectories) by their mechanisms composition 
-(the fact that any of the supplementary mechanisms is activated or not"
-              Each bar represents the value of the estimated 
-              coefficient for each activated mechanism, in comparison with the
-              same model structure without this mechanism, everything else being equal.')),
              plotOutput("graph1"),
-             h3("Contribution of mechanisms' interactions to the quality of simulation (closeness to data)"),
+              h3("Contribution of mechanisms' interactions to the quality of simulation (closeness to data)"),
              "This graph allows to explore the interaction of two mechanisms in reducing the distance
               between empirical and simulated trajectories of cities in the Former Soviet Union.",
              fluidRow(
@@ -178,8 +180,7 @@ models (a small difference between simulated and empirical urban trajectories) b
                            min = 0, max = 5, value = 1, step = 1)),
                column(6,
                       selectInput("period", label = "Period",
-                           choices = c("1959-1989", "1989-2010"), selected = "1959-1989"))
-               
+                           choices = c("1959-1989", "1989-2010"), selected = "1959-1989")) 
              ),
               h3("Mechanisms' combination:"),
              "This is the best set of mechanisms for the given period to minimize the distance 
@@ -194,6 +195,7 @@ models (a small difference between simulated and empirical urban trajectories) b
              dataTableOutput("print1")
              
     ),
+"-----",
     "Simulate it",
     tabPanel("Run a MARIUS model",
              "To execute a model, either select one of the best calibrated models for a given period of time and 
@@ -318,7 +320,7 @@ models (a small difference between simulated and empirical urban trajectories) b
                  verbatimTextOutput("cppst"))
             
     ),
-            
+"-----",   
     "How close are we ?", 
      tabPanel("Macro Analysis",
              h3("Rank-size distribution"),
